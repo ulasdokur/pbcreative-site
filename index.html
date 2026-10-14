@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pb | creative. · Yakında</title>
+<meta name="description" content="pbcreative: kişisel marka stratejisi, içerik üretimi ve dijital görünürlük tek kreatif çatı altında. Site yakında yayında.">
+<meta property="og:title" content="Pb | creative. · Yakında">
+<meta property="og:description" content="Less noise. More impact. Kişisel marka stratejisi, içerik üretimi ve dijital görünürlük.">
+<meta property="og:url" content="https://pbcreative.co/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#efefed">
+<link rel="canonical" href="https://pbcreative.co/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0b'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='700' fill='%23efefed' text-anchor='middle'%3EPb%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;700&display=swap">
+<style>
+body{margin:0}
+
+/* pbcreative yakında sayfası: E yönünün ilk iki bölümü (nokta portre + 3B gözler) */
+:root{--paper:#efefed;--card:#f7f7f5;--ink:#0b0b0b;--felt:#6a6a68;--rule:#c9c9c6;--tape:#e4d9b6;--lime:#d9f24b;--cyan:#3fe0ee;--navy:#2a2aa8;--mag:#de54d6;
+--sans:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;--serif:"Instrument Serif","Times New Roman",serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--gut:clamp(16px,4vw,56px);color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.35;overflow-x:hidden}
+a{color:inherit}
+a:focus-visible,canvas:focus-visible,input:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+ul,ol{margin:0;padding:0;list-style:none}h1,h2,h3,p{margin:0}h1,h2{text-wrap:balance}
+.wrap{padding-inline:var(--gut);max-width:1440px;margin-inline:auto}
+.m{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.logo{display:inline-flex;align-items:center;gap:10px;font-family:"Jost","Century Gothic",Arial,sans-serif;font-size:26px;letter-spacing:-.03em;line-height:1;text-decoration:none}
+.logo span{font-weight:300}.logo i{width:1px;height:28px;background:currentColor}.logo b{font-weight:700}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:18px}
+.top nav{display:flex;align-items:center;gap:clamp(12px,2.4vw,32px)}
+.top nav a{text-decoration:none}.top nav a.plain:hover{text-decoration:underline;text-underline-offset:6px}
+@media (max-width:640px){.top nav a.plain{display:none}}
+.cta{border:1px solid var(--ink);border-radius:75px;padding:11px 30px;text-decoration:none;display:inline-block;transition:background .5s cubic-bezier(.19,1,.22,1),color .5s cubic-bezier(.19,1,.22,1)}
+.cta:hover{background:var(--ink);color:var(--paper)}
+.cta.f{background:var(--ink);color:var(--paper)}.cta.f:hover{background:transparent;color:var(--ink)}
+
+/* açılış */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,64px);align-items:end;padding-block:clamp(16px,3vw,48px) clamp(40px,6vw,88px)}
+.hero h1{font-weight:300;font-size:clamp(46px,7.4vw,132px);line-height:.98;letter-spacing:-.035em}
+.hero .lede{max-width:40ch;margin-top:clamp(20px,2.6vw,40px);color:var(--ink)}
+.acts{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;margin-top:28px}
+.poster{position:relative;background:var(--card);padding:clamp(10px,1.4vw,20px);min-width:0;margin:0}
+.poster canvas{display:block;width:100%;aspect-ratio:4/5;cursor:ew-resize;touch-action:pan-y}
+.bar{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);background:var(--ink);color:var(--card);padding:6px 12px;white-space:nowrap;font-size:clamp(9px,.9vw,12px)}
+.poster figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;color:var(--felt)}
+@media (max-width:820px){.hero{grid-template-columns:minmax(0,1fr)}.poster{max-width:440px}}
+
+/* gözler: gerçek 3B sahne */
+.eyes{background:#000000;color:#f4f2ed;padding-top:clamp(40px,6vw,88px)}
+.eyes .hd{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 40px;align-items:end}
+.eyes h2{font-weight:300;font-size:clamp(34px,5.2vw,78px);line-height:1.02;letter-spacing:-.035em}
+.eyes p{color:#a9a7a2;max-width:40ch}
+.eyes canvas{display:block;width:100%;height:clamp(340px,48vw,680px);margin-top:clamp(20px,3vw,40px);touch-action:pan-y}
+@media (max-width:700px){.eyes .hd{grid-template-columns:minmax(0,1fr)}}
+
+
+.soon{display:flex;align-items:center;gap:12px;color:var(--felt);margin-bottom:clamp(18px,2.4vw,32px)}
+.soon i{width:8px;height:8px;border-radius:50%;background:var(--mag);animation:nefes 2.4s ease-in-out infinite}
+@keyframes nefes{50%{opacity:.25}}
+.hero .lede+.lede{margin-top:14px;color:var(--felt)}
+.eyes .hd h2{font-size:clamp(46px,9vw,160px);letter-spacing:-.04em;line-height:.95}
+.alt{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;padding-block:22px;color:#8d8b86;border-top:1px solid #222}
+.top .m{color:var(--felt)}
+</style>
+</head>
+<body>
+<div id="ust">
+<header class="wrap top"><a class="logo" href="/" aria-label="Pb creative."><span>Pb</span><i></i><b>creative.</b></a>
+<span class="m">Estd. 2021 · İstanbul</span></header>
+<main>
+<section class="wrap hero">
+  <div>
+    <p class="soon m"><i aria-hidden="true"></i>Yakında · <span lang="en">Coming soon</span></p>
+    <h1 lang="en">Less noise.<br>More impact.</h1>
+    <p class="lede">Kişisel marka stratejisi, içerik üretimi ve dijital görünürlük tek kreatif çatı altında.</p>
+    <p class="lede" lang="en">Personal branding, content production and digital visibility under one creative roof.</p>
+  </div>
+  <figure class="poster">
+    <canvas id="portre" role="img" aria-label="Noktalardan oluşan portre afişi"></canvas>
+    <span class="bar m" lang="en">Pb | creative.</span>
+  </figure>
+</section>
+<section class="eyes">
+  <div class="wrap hd"><h2>Yakında.</h2><p>Site hazırlanıyor. Çok yakında burada.</p></div>
+  <canvas id="gl" role="img" aria-label="Siyah zeminde üç boyutlu göz küreleri; aralarında gezen parlak siyah bir küreyi izliyorlar"></canvas>
+  <div class="wrap alt m" lang="en"><span>pbcreative.co</span><span>© 2026 Pb | creative.</span></div>
+</section>
+</main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+
+(function(){
+  var az=window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches;
+  /* ── nokta portre ── */
+  var HEX="55555555555555555444445566666666654333333444444444444444444444445555555555555555444469aa9abcdeffeec9643333344444444444444444444455555555555555444459abdeeffffffffffffda63333443333344444444444445555555555555544449cdefffffffffffffffffd843333334444444444444444555555555555554447defffffffffffffffffffffc633333333344444444444455555555555554457cffffffffffffffffffffffffe8333333333444444444445555555555554459effffffffefffefffffffffffffe94333333444444444444555555555554558efffffeeeeeeeeeffffffffffffeffa43333333444444444455555555555558effffeeedeeeedeeffffffffffffffff9333333344444444445555555555447dfffeeeeeeeeeeeeefeffffffffffffffe63333333333444444555555555554affedddeeeeeefffffffeeeffffffffffffb4333333333444344555555555545dfeddeeeeedddddeffffffeffffffffffffe933333333344434455555555555bfddefecbcccb9abbceefffeeffffffffffffd63333333344333455555555548eedefda7667877789bceeffeeffffffffffffea3333333333344455555555547eeefd8544445567789bdeefeefffffffffffffd4333333333344455555555448ddee95444445566778acdeeeefffffffffffffe7333333333344455555555449edda54444444555678abddeeefffffffffffffe833333333333345555555544afdc7444333344555689bcddeefffffffffffffe843333333333345555555444afeb5332223334455689abcddefffffffffffffec533333333333455555555449ffb4332122234445689aabcdeffffffffffffffd833333333334455555555448ef833321122334567899aabdeffffffffffffffc933333333333455555555446de63332222223455688999adeefffffffffffffe733333333333355555554445cd53332222222345678899beeefffffffffffffe633333333333355555554444bd533322222222346678abceefeeefffffffffff8333333333333555555444449e5332111223233469bceeefffeeeeffffffffffa343333333333555555444445c8764322223346adeeca9aefeeeeeffffffffeea3333333333335555554444448b8acdb733446beec85689ceeeeeeeffffffeedb34333333333355555544444456246ab942468cb8869cddcdeeeeeefffffeefeb433333333333555555444444454678974237ce9888bfffeeeeeeeefffffffef9433333333333555555544444569cbced7328dfb9919feefeedeeeefffffefef943333333333355555544444458cb3aed8228efb8558bdeedbbdeeeffffffeef7333333333333555555544444566867994339eec65679ccba9bdeeeefeeffffd433333333333355555544444445355665334aeec8545677879ceeeeeeeeffffa433333333333355555544444444333333335cedc965445568aceedddeeeffff8333333333333355555544444444332222336deeda65444579cdeedddeeefeee6333333333333355555544444444332222337ceedb6444568aceeedddedefeeeb533333333333355555544444444432222346cefeb6444579bdeeedddeeffeeefc64333333333355555544444444432222327deeed6445679ceeedddddeffeeffea6433333333355555544444444433223338ddddfb54578bdeeedddddeeeeffffd7444333333355555544444444443334569dfedfc64679bdeeddddddddeffffffb433333333355555444444444444344346acedca74579bddeeedddceefffffffe63333333335555444444444444445322345999886679bddeeeddcdeeffffffffa3333333335555554444444444454333443678998998adeeeeedcdeeffffffffe533333333555555444444444445433344479abca9a8adeeeeddcdeefffffffff833333333555555444444444444455778aacdeed887bdeeeddcdeeefffffffffb33333333555555444444444444467879aacdeeb867cddddddcdeeeffffffffed5333333355555544444444444444465557bddcaa78dddddccdeeeeffffffffee7333333355555544444444444444446789abcbbb9addddccdeeeeefffffffffea333333355555544444444444444445777799abbbcdddccdeeeeeefffffffffea3333333555555444444444444444444555679bcdddccbdeeeeeeeffffffffffb433333355555544444444444444433334567acdddcbbdeeeeeeeeefffffffffa433333355555554444444444444443233579bcdccbbdeefeeeeeeeeeeffffffa43333335555555444444444444444435458bccbbbceeeeeeeeeeeffcaffffff933333335555555444444444444444556569bbabcdeeeeeeeeffffeba9effffe73333333555555544444444444444456788aaacdddeeeeeeeefffe89bacfffff83333333555555544444444444444444556679aabccddeeeeeffd668aaaefffdb6333333555555544444444444444444444557789a9abcddeefc44568a9cfffe89433333555555544444444444444444444456668878abcccec4343469aaeffca6733333555555544444444444444444444455556567899abb32322247a9cffda87533335555555444444444444444444444555555567878931221113699bffeb9563333555555544444444444444444442455554446766730221111236a9cfecb764333555555544444444444444444421445544446655401111100126779decca643335555555444444444444444443045455544565530111111000431369bcbd8433355555554444444444444444302a73555445644101110000024111379a9db333355555555544444444444444117e8355444654201111000024111224798bc43335555555554444444444443115bf83444445420111100001411123125899c43335555555554444444444321038df7343444430011000001421123135368995333555555555544444444210005cfc5443433310110000003201121354336997433555555555544445431100019eb7453334520010000002301121233344378984355555555554445421110005db6545345650000000002400121122234444799735555555555555421100002bd64445455620000000015100111112233453589975555555555555210000008eb4445655740000000005301111111223343357899555555555555411000004cea455565640100000004511110111222333234aa68555555555555200000019ee94555565000000000362001001111222222429c7555555555555411100005ede85555670000111112431011001111221123559da65555555555530100002aede75556820003620110000110011111111235758db85555555555520100007edec66559300003500000101100110111111345658ca9555555555541000002bedfa66596000003510001001101200110013344657aab555555555520100006edde755870000002610011011003100100123334567abc55555555551000002beded657a100000027201101210241010002222345679ac",COL=64,ROW=80,G=[],R=[],s=7,i;
+  function rnd(){s=(s*16807)%2147483647;return s/2147483647}
+  function kurgu(u,v){var w=v*1.25,d=.08+.05*v,h=Math.pow((u-.5)/.2,2)+Math.pow((w-.5)/.27,2);
+    if(Math.pow((u-.5)/.46,2)+Math.pow((w-1.34)/.42,2)<1)d=.93;
+    if(Math.abs(u-.5)<.085&&w>.68&&w<.98)d=.74-(u-.5)*1.6;
+    if(h<1){d=.72-(u-.5)*1.3+(w-.5)*.25;if(w<.36+Math.abs(u-.5)*.3)d=.96}
+    return Math.max(.04,Math.min(1,d))}
+  for(i=0;i<COL*ROW;i++){R.push(rnd());G.push(HEX.length===COL*ROW?parseInt(HEX[i],16)/15:kurgu((i%COL+.5)/COL,(Math.floor(i/COL)+.5)/ROW))}
+  var c=document.getElementById("portre"),x=c.getContext("2d"),n=az?.08:1,hedef=.08,raf=0;
+  function ciz(){var W=c.clientWidth,H=c.clientHeight,dpr=Math.min(2,window.devicePixelRatio||1);
+    if(c.width!==Math.round(W*dpr)){c.width=Math.round(W*dpr);c.height=Math.round(H*dpr)}
+    x.setTransform(dpr,0,0,dpr,0,0);x.globalCompositeOperation="source-over";x.fillStyle="#f4f4f1";x.fillRect(0,0,W,H);
+    var cw=W/COL,ch=H/ROW,r=Math.min(cw,ch)*.47,k=0;
+    for(var j=0;j<ROW;j++)for(var i=0;i<COL;i++,k++){var v=G[k]*(1-n)+R[k]*n,cx=(i+.5)*cw,cy=(j+.5)*ch,q=r*(.42+.58*v),o=r*.3;
+      x.globalCompositeOperation="multiply";
+      x.fillStyle="rgba(170,238,120,.75)";x.beginPath();x.ellipse(cx-o,cy,q*.8,q,0,0,6.3);x.fill();
+      x.fillStyle="rgba(222,84,214,"+(.3+.6*v)+")";x.beginPath();x.ellipse(cx+o,cy,q*.8,q,0,0,6.3);x.fill();
+      if(v>.4){x.fillStyle="rgba(40,20,52,"+Math.min(.92,(v-.4)*1.7)+")";x.beginPath();x.ellipse(cx,cy,q*.86,q,0,0,6.3);x.fill()}}}
+  function adim(){n+=(hedef-n)*.1;if(Math.abs(hedef-n)<.004)n=hedef;ciz();raf=n===hedef?0:requestAnimationFrame(adim)}
+  function git(h){hedef=h;if(az){n=h;ciz()}else if(!raf)raf=requestAnimationFrame(adim)}
+  c.addEventListener("pointermove",function(e){var b=c.getBoundingClientRect();git(Math.max(.02,Math.min(1,1-(e.clientX-b.left)/b.width)))});
+  c.addEventListener("pointerleave",function(){git(.08)});
+  window.addEventListener("resize",ciz);
+  ciz();git(.08);
+
+
+  /* ── gözler: three.js ile gerçek 3B ── */
+  (function(){var cv=document.getElementById("gl"),T=window.THREE;if(!T){cv.hidden=true;return}
+   try{
+    var Rn=new T.WebGLRenderer({canvas:cv,antialias:true});Rn.setPixelRatio(Math.min(2,window.devicePixelRatio||1));Rn.outputEncoding=T.sRGBEncoding;Rn.toneMapping=T.ACESFilmicToneMapping;Rn.toneMappingExposure=1.05;
+    var sc=new T.Scene();sc.background=new T.Color(0x000000);
+    var FOV=22,CZ=22,cam=new T.PerspectiveCamera(FOV,1,.1,200);cam.position.z=CZ;
+    function goz(){var k=document.createElement("canvas");k.width=1024;k.height=512;var g=k.getContext("2d"),cx=256,cy=256,r=80,i,q=99;
+      function rn(){q=(q*16807)%2147483647;return q/2147483647}
+      g.fillStyle="#f6eeea";g.fillRect(0,0,1024,512);
+      var p=g.createRadialGradient(cx,cy,110,cx,cy,560);p.addColorStop(0,"rgba(236,186,176,0)");p.addColorStop(.6,"rgba(236,186,176,.14)");p.addColorStop(1,"rgba(232,170,160,.3)");g.fillStyle=p;g.fillRect(0,0,1024,512);
+      g.lineCap="round";for(i=0;i<22;i++){var a=rn()*6.283,d0=260+rn()*220,d1=105+rn()*90,px=cx+Math.cos(a)*d0,py=cy+Math.sin(a)*d0*.9;g.beginPath();g.moveTo(px,py);
+        for(var t=1;t<=6;t++){var d=d0+(d1-d0)*t/6,aa=a+(rn()-.5)*.16;g.lineTo(cx+Math.cos(aa)*d,cy+Math.sin(aa)*d*.9)}
+        g.strokeStyle="rgba(190,90,96,"+(.05+rn()*.09)+")";g.lineWidth=.5+rn()*1.3;g.stroke()}
+      var s=g.createRadialGradient(cx,cy,r*.95,cx,cy,r*1.5);s.addColorStop(0,"rgba(60,30,40,.55)");s.addColorStop(1,"rgba(60,30,40,0)");g.fillStyle=s;g.beginPath();g.arc(cx,cy,r*1.5,0,6.3);g.fill();
+      var ir=g.createRadialGradient(cx,cy,r*.3,cx,cy,r);ir.addColorStop(0,"#6f8fb0");ir.addColorStop(.45,"#3f5a7a");ir.addColorStop(.85,"#22334a");ir.addColorStop(1,"#0c121c");g.fillStyle=ir;g.beginPath();g.arc(cx,cy,r,0,6.3);g.fill();
+      for(i=0;i<260;i++){var b=rn()*6.283,r0=r*(.36+rn()*.12),r1=r*(.72+rn()*.26);g.beginPath();g.moveTo(cx+Math.cos(b)*r0,cy+Math.sin(b)*r0);g.lineTo(cx+Math.cos(b+(rn()-.5)*.05)*r1,cy+Math.sin(b+(rn()-.5)*.05)*r1);
+        g.strokeStyle=rn()<.5?"rgba(190,215,240,"+(.10+rn()*.25)+")":"rgba(8,14,24,"+(.15+rn()*.3)+")";g.lineWidth=.6+rn()*1.2;g.stroke()}
+      var h=g.createRadialGradient(cx,cy,r*.34,cx,cy,r*.52);h.addColorStop(0,"rgba(196,150,92,.5)");h.addColorStop(1,"rgba(196,150,92,0)");g.fillStyle=h;g.beginPath();g.arc(cx,cy,r*.52,0,6.3);g.fill();
+      g.fillStyle="#020203";g.beginPath();g.arc(cx,cy,r*.36,0,6.3);g.fill();
+      g.strokeStyle="rgba(6,10,18,.85)";g.lineWidth=6;g.beginPath();g.arc(cx,cy,r,0,6.3);g.stroke();
+      var tx=new T.CanvasTexture(k);tx.encoding=T.sRGBEncoding;tx.anisotropy=8;return tx}
+    function gokkusagi(){var k=document.createElement("canvas");k.width=512;k.height=256;var g=k.getContext("2d");g.fillStyle="#000";g.fillRect(0,0,512,256);
+      [[92,104],[164,104]].forEach(function(o){var p=g.createRadialGradient(o[0],o[1],2,o[0],o[1],34);p.addColorStop(0,"#2a6cff");p.addColorStop(.3,"#19c7b0");p.addColorStop(.52,"#7de02a");p.addColorStop(.7,"#ffd21f");p.addColorStop(.86,"#ff3b1f");p.addColorStop(1,"rgba(255,40,20,0)");
+        g.save();g.translate(o[0],o[1]);g.scale(.8,1.25);g.translate(-o[0],-o[1]);g.fillStyle=p;g.beginPath();g.arc(o[0],o[1],34,0,6.3);g.fill();g.restore()});
+      var tx=new T.CanvasTexture(k);tx.encoding=T.sRGBEncoding;return tx}
+    var geo=new T.SphereGeometry(1,64,48),mat=new T.MeshPhysicalMaterial({map:goz(),roughness:.32,metalness:0,clearcoat:1,clearcoatRoughness:.05});
+    sc.add(new T.HemisphereLight(0xffffff,0xf0c4b6,.78));
+    var key=new T.DirectionalLight(0xffffff,1.25);key.position.set(-5,8,12);sc.add(key);
+    var alt=new T.PointLight(0xffc2a8,.45,60);alt.position.set(0,-14,7);sc.add(alt);
+    var crt=new T.WebGLCubeRenderTarget(256,{generateMipmaps:true,minFilter:T.LinearMipmapLinearFilter}),cc=new T.CubeCamera(.1,100,crt);sc.add(cc);
+    var top=new T.Mesh(new T.SphereGeometry(1.85,64,48),new T.MeshPhysicalMaterial({color:0x040404,metalness:1,roughness:.03,envMap:crt.texture,envMapIntensity:1.25,clearcoat:1,clearcoatRoughness:.02,emissive:0xffffff,emissiveMap:gokkusagi(),emissiveIntensity:.95}));
+    top.position.set(0,0,2.4);sc.add(top);
+    var E=[],grup=new T.Group();sc.add(grup),hh=1,hw=1,LX=0,LY=0,AD=2.75;
+    function kur(){var w=cv.clientWidth,h=cv.clientHeight;Rn.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();
+      hh=Math.tan(FOV*Math.PI/360)*CZ;hw=hh*cam.aspect;LY=Math.max(0,hh*(CZ-2.4)/CZ-2.05);LX=Math.max(0,hw*(CZ-2.4)/CZ-2.05);var cols=Math.ceil(2*hw/AD)+1,rows=Math.ceil(2*hh/AD)+1,i,j;
+      while(grup.children.length)grup.remove(grup.children[0]);E=[];
+      for(j=0;j<rows;j++)for(i=0;i<cols;i++){var m=new T.Mesh(geo,mat);m.position.set((i-(cols-1)/2)*AD,(j-(rows-1)/2)*AD,0);grup.add(m);E.push(m)}}
+    var hx=0,hy=0,son=0,gorunur=true,v=new T.Vector3();
+    function kare(t){if(Date.now()-son>2200){hx=Math.sin(t/2100)*LX;hy=Math.cos(t/2900)*LY}
+      top.position.x+=(hx-top.position.x)*.045;top.position.y+=(hy-top.position.y)*.045;top.rotation.y=(hx-top.position.x)*.25;
+      for(var i=0;i<E.length;i++){var ex=E[i].position.x,ey=E[i].position.y,dx=top.position.x-ex,dy=top.position.y-ey,m=Math.sqrt(dx*dx+dy*dy),k=m>5.2?5.2/m:1;v.set(ex+dx*k,ey+dy*k,14);E[i].lookAt(v)}
+      top.visible=false;cc.position.copy(top.position);cc.update(Rn,sc);top.visible=true;Rn.render(sc,cam)}
+    function dongu(t){if(gorunur)kare(t);if(!az)requestAnimationFrame(dongu)}
+    cv.addEventListener("pointermove",function(e){var b=cv.getBoundingClientRect();son=Date.now();hx=Math.max(-LX,Math.min(LX,((e.clientX-b.left)/b.width*2-1)*hw));hy=Math.max(-LY,Math.min(LY,-((e.clientY-b.top)/b.height*2-1)*hh));if(az){top.position.x=hx;top.position.y=hy;kare(0)}});
+    if(window.IntersectionObserver)new IntersectionObserver(function(en){gorunur=en[0].isIntersecting}).observe(cv);
+    window.addEventListener("resize",function(){kur();if(az)kare(0)});
+    kur();if(az){top.position.set(LX*.3,LY*.3,2.4);kare(0)}else requestAnimationFrame(dongu);
+   }catch(err){cv.hidden=true}
+  })();
+})();
+</script>
+</body>
+</html>

@@ -25,9 +25,9 @@ document.addEventListener("click",function(e){var a=e.target.closest&&e.target.c
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Pb | creative.","alternateName":"pbcreative","url":"https://pbcreative.co/","logo":"https://pbcreative.co/apple-touch-icon.png","slogan":"Less noise. More impact.","email":"pbcreative.ist@gmail.com","telephone":"+905421952005","contactPoint":{"@type":"ContactPoint","telephone":"+905421952005","email":"pbcreative.ist@gmail.com","contactType":"customer service","availableLanguage":["Turkish","English"]},"foundingDate":"2021","address":{"@type":"PostalAddress","addressLocality":"İstanbul","addressCountry":"TR"}}</script>
 <meta name="theme-color" content="#efefed">
 <link rel="canonical" href="https://pbcreative.co/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0b'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='700' fill='%23efefed' text-anchor='middle'%3EPb%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230b0b0b'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial'%20font-size='30'%20font-weight='700'%20fill='%23efefed'%20text-anchor='middle'%3EPb%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;700&display=swap" media="print" onload="this.media='all'">
 <style>
 body{margin:0}
 
@@ -84,7 +84,7 @@ ul,ol{margin:0;padding:0;list-style:none}h1,h2,h3,p{margin:0}h1,h2{text-wrap:bal
 </head>
 <body>
 <div id="ust">
-<header class="wrap top"><a class="logo" href="/" aria-label="Pb creative."><span>Pb</span><i></i><b>creative.</b></a>
+<header class="wrap top"><a class="logo" href="/"><span>Pb</span> <i></i><b>creative.</b></a>
 <span class="m">Estd. 2021 · İstanbul</span></header>
 <main>
 <section class="wrap hero">
@@ -107,8 +107,8 @@ ul,ol{margin:0;padding:0;list-style:none}h1,h2,h3,p{margin:0}h1,h2{text-wrap:bal
 </section>
 </main>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>addEventListener("DOMContentLoaded",function(){
 
 (function(){
   var az=window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches;
@@ -189,6 +189,7 @@ ul,ol{margin:0;padding:0;list-style:none}h1,h2,h3,p{margin:0}h1,h2{text-wrap:bal
    }catch(err){cv.hidden=true}
   })();
 })();
+});
 </script>
 </body>
 </html>

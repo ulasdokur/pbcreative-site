@@ -6,9 +6,9 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-B2E001MT0L");
 document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.getAttribute("href"),k=/wa\.me/.test(h)?"whatsapp":/^mailto:/.test(h)?"email":/^tel:/.test(h)?"phone":null;if(k)gtag("event","generate_lead",{method:k});});</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pb | creative. · Yakında</title>
-<meta name="description" content="pbcreative: kişisel marka stratejisi, içerik üretimi ve dijital görünürlük tek kreatif çatı altında. Site yakında yayında.">
-<meta property="og:title" content="Pb | creative. · Yakında">
+<title>Pb | creative. · Kişisel marka ajansı</title>
+<meta name="description" content="pbcreative: kişisel marka stratejisi, içerik üretimi ve dijital görünürlük tek kreatif çatı altında. İstanbul.">
+<meta property="og:title" content="Pb | creative. · Kişisel marka ajansı">
 <meta property="og:description" content="Less noise. More impact. Kişisel marka stratejisi, içerik üretimi ve dijital görünürlük.">
 <meta property="og:url" content="https://pbcreative.co/">
 <meta property="og:type" content="website">
@@ -18,7 +18,7 @@ document.addEventListener("click",function(e){var a=e.target.closest&&e.target.c
 <meta property="og:site_name" content="Pb | creative.">
 <meta property="og:locale" content="tr_TR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pb | creative. · Yakında">
+<meta name="twitter:title" content="Pb | creative. · Kişisel marka ajansı">
 <meta name="twitter:description" content="Less noise. More impact. Kişisel marka stratejisi, içerik üretimi ve dijital görünürlük.">
 <meta name="twitter:image" content="https://pbcreative.co/og.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -27,11 +27,9 @@ document.addEventListener("click",function(e){var a=e.target.closest&&e.target.c
 <link rel="canonical" href="https://pbcreative.co/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230b0b0b'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Arial'%20font-size='30'%20font-weight='700'%20fill='%23efefed'%20text-anchor='middle'%3EPb%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500&family=Jost:wght@300;700&display=swap" media="print" onload="this.media='all'">
 <style>
-body{margin:0}
-
-/* pbcreative yakında sayfası: E yönünün ilk iki bölümü (nokta portre + 3B gözler) */
+/* Yerleşim: solda ince dev cümle, sağda bantla tutturulmuş canlı nokta portre afişi (gürültüden portreye). Altında imleci izleyen göz ızgarası, meslek listesi, paket satırları ve süreç yay çizimi. Arayüz siyah, gri, beyaz; renk yalnız afişte, afişin arkasındaki bulanık ışıkta ve tek bir gözde. Tek görünüm. */
 :root{--paper:#efefed;--card:#f7f7f5;--ink:#0b0b0b;--felt:#6a6a68;--rule:#c9c9c6;--tape:#e4d9b6;--lime:#d9f24b;--cyan:#3fe0ee;--navy:#2a2aa8;--mag:#de54d6;
 --sans:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;--serif:"Instrument Serif","Times New Roman",serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;--gut:clamp(16px,4vw,56px);color-scheme:light}
 *{box-sizing:border-box}
@@ -70,41 +68,326 @@ ul,ol{margin:0;padding:0;list-style:none}h1,h2,h3,p{margin:0}h1,h2{text-wrap:bal
 .eyes canvas{display:block;width:100%;height:clamp(340px,48vw,680px);margin-top:clamp(20px,3vw,40px);touch-action:pan-y}
 @media (max-width:700px){.eyes .hd{grid-template-columns:minmax(0,1fr)}}
 
+/* kimlerle */
+.who{padding-block:clamp(40px,6vw,88px)}
+.who .m{color:var(--felt)}
+.roster{display:flex;flex-wrap:wrap;gap:0 .32em;margin-top:14px}
+.roster button{font:inherit;font-weight:300;font-size:clamp(28px,4.4vw,64px);line-height:1.14;letter-spacing:-.03em;color:#a4a4a1;background:none;border:0;padding:0;cursor:pointer;transition:color .4s cubic-bezier(.19,1,.22,1)}
+.roster button::after{content:"·";margin-left:.32em;color:#a4a4a1}
+.roster button:last-child::after{content:""}
+.roster button:hover,.roster button[aria-selected="true"]{color:var(--ink)}
+.roster button:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 40px;margin-top:clamp(24px,3vw,44px);padding-top:22px;border-top:1px solid var(--ink)}
+.panel p{font-size:clamp(19px,1.7vw,25px);line-height:1.3;max-width:34ch}
+.panel li{display:grid;grid-template-columns:44px minmax(0,1fr);padding:12px 0;border-bottom:1px solid var(--rule)}
+.panel li span:first-child{font-family:var(--mono);font-size:12px;padding-top:5px;color:var(--felt)}
+.panel .m{color:var(--felt);display:block;margin-bottom:6px}
+@media (max-width:700px){.panel{grid-template-columns:minmax(0,1fr)}}
 
-.soon{display:flex;align-items:center;gap:12px;color:var(--felt);margin-bottom:clamp(18px,2.4vw,32px)}
-.soon i{width:8px;height:8px;border-radius:50%;background:var(--mag);animation:nefes 2.4s ease-in-out infinite}
-@keyframes nefes{50%{opacity:.25}}
-.hero .lede+.lede{margin-top:14px;color:var(--felt)}
-.eyes .hd h2{font-size:clamp(46px,9vw,160px);letter-spacing:-.04em;line-height:.95}
-.alt{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;padding-block:22px;color:#8d8b86;border-top:1px solid #222}
-.top .m{color:var(--felt)}
-.acts .plain{text-decoration:none;color:var(--felt)}.acts .plain:hover{text-decoration:underline;text-underline-offset:6px}
-.eyes p a{color:#f4f2ed}
+.sec{border-top:1px solid var(--ink);padding-block:clamp(40px,6vw,88px)}
+.sec .hd{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 40px;align-items:start}
+.sec h2{font-weight:300;font-size:clamp(34px,5.2vw,78px);line-height:1.05;letter-spacing:-.03em}
+.sec h2 em{font-family:var(--serif);font-style:italic;font-weight:400}
+.sec .hd p{color:var(--felt);max-width:44ch}
+@media (max-width:700px){.sec .hd{grid-template-columns:minmax(0,1fr)}}
+.packs{margin-top:clamp(28px,4vw,56px);border-top:1px solid var(--rule)}
+.pack{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,.8fr) minmax(0,1.6fr) minmax(0,.6fr);gap:8px 24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--rule);transition:padding .6s cubic-bezier(.19,1,.22,1),background .6s}
+.pack:hover{padding-inline:16px;background:var(--card)}
+.pack h3{font-weight:300;font-size:clamp(26px,3vw,45px);letter-spacing:-.02em;line-height:1}
+.price{font-size:clamp(20px,2vw,28px);font-variant-numeric:tabular-nums}
+.price span{font-size:14px;color:var(--felt);margin-left:4px}
+.pack ul{display:flex;flex-wrap:wrap;gap:4px 18px;color:var(--felt);font-size:16px}
+.pack li+li::before{content:"·";margin-right:18px}
+.min{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-align:right}
+@media (max-width:820px){.pack{grid-template-columns:minmax(0,1fr) auto}.pack ul{grid-column:1/-1}.min{grid-column:1/-1;text-align:left}.pack ul{flex-direction:column;gap:2px}.pack li+li::before{content:none}}
+.top .cta{white-space:nowrap}
+@media (max-width:640px){.top .cta{padding:8px 16px;font-size:15px}}
+.arc{margin-top:clamp(24px,3.4vw,48px);overflow-x:auto}
+.arc svg{display:block;width:100%;min-width:680px;height:auto}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:0 40px;margin-top:24px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:2px 8px;padding:18px 0;border-top:1px solid var(--rule)}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:12px;grid-row:1/4;padding-top:5px}
+.day{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--felt)}
+.steps h3{font-weight:400;font-size:24px;letter-spacing:-.01em}
+.steps p{color:var(--felt);font-size:16px}
+.end h2{font-size:clamp(46px,10vw,180px);letter-spacing:-.04em;line-height:.95}
+.foot{margin-top:clamp(40px,6vw,88px);display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;color:var(--felt)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Alt bölümler E'nin ilk iki bölümünün diliyle: gri kâğıt, ince yazı, mono etiket, her yüz nokta portre. Renk yalnız noktaların kendi mor-yeşil tonunda. Teklif bölümü siyah; afişin ortasındaki siyah şerit yazı alanına dönüşür. */
+.nk{padding-block:clamp(48px,7vw,112px)}
+.nk+.nk{border-top:1px solid var(--ink)}
+.yh+.nk{border-top:0}
+.bh{font-weight:300;font-size:clamp(34px,5.2vw,78px);line-height:1.05;letter-spacing:-.03em}
+.kim{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,72px);align-items:start}
+.cumle{font-weight:300;font-size:clamp(30px,4.6vw,70px);line-height:1.14;letter-spacing:-.035em;color:#a4a4a1}
+.cumle button{font:inherit;letter-spacing:inherit;color:var(--ink);background:none;border:0;border-bottom:1px solid var(--ink);padding:0 .06em;cursor:pointer;line-height:1;transition:background .4s cubic-bezier(.19,1,.22,1),color .4s cubic-bezier(.19,1,.22,1)}
+.cumle button:hover,.cumle button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.cumle button:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.anlat{margin-top:clamp(28px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 40px;padding-top:20px;border-top:1px solid var(--ink)}
+.anlat p{font-size:clamp(18px,1.5vw,22px);line-height:1.32;max-width:32ch}
+.anlat li{display:grid;grid-template-columns:40px minmax(0,1fr);padding:10px 0;border-bottom:1px solid var(--rule);font-size:16px}
+.anlat li span:first-child{font-family:var(--mono);font-size:12px;color:var(--felt);padding-top:4px}
+.afis{background:var(--card);padding:clamp(8px,1.1vw,16px);position:relative;margin:0;min-width:0}
+.afis canvas{display:block;width:100%;aspect-ratio:4/5}
+.afis .serit{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);background:var(--ink);color:var(--card);padding:6px 12px;white-space:nowrap;font-family:var(--mono);font-size:clamp(9px,.9vw,12px);letter-spacing:.06em;text-transform:uppercase}
+@media (max-width:860px){.kim{grid-template-columns:minmax(0,1fr)}.kim .afis{max-width:380px}.anlat{grid-template-columns:minmax(0,1fr)}}
+
+.pk{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(28px,4vw,56px);border-top:1px solid var(--ink)}
+.pk article{padding:22px clamp(12px,1.6vw,24px) 6px;border-left:1px solid var(--rule);display:flex;flex-direction:column;gap:14px;min-width:0}
+.pk article:first-child{border-left:0;padding-left:0}
+.pk h3{font-weight:300;font-size:clamp(28px,3vw,45px);letter-spacing:-.02em;line-height:1}
+.pk .fy{font-size:clamp(19px,1.7vw,24px);font-variant-numeric:tabular-nums}
+.pk .fy small{font-size:14px;color:var(--felt);margin-left:4px}
+.sayac{display:grid;gap:10px;padding-block:14px;border-block:1px solid var(--rule)}
+.sayac div{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:8px}
+.sayac span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--felt)}
+.sayac i{display:flex;flex-wrap:wrap;gap:5px 6px;font-style:normal}
+.sayac b{width:11px;height:11px;border-radius:50%;background:rgba(40,20,52,.88);box-shadow:-2.5px 0 0 rgba(150,225,100,.8),2.5px 0 0 rgba(222,84,214,.7);display:block}
+.sayac b.bos{background:none;box-shadow:inset 0 0 0 1px var(--rule)}
+.pk ul{font-size:15px;color:var(--felt);display:grid;gap:4px}
+.pk .en{margin-top:auto;padding-top:8px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.soz{color:var(--felt);max-width:52ch;margin-top:22px}
+@media (max-width:900px){.pk{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.pk article{border-left:0;padding-left:0;border-bottom:1px solid var(--rule);padding-bottom:18px}}
+@media (max-width:520px){.pk{grid-template-columns:minmax(0,1fr)}}
+
+.rk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,48px);margin-top:clamp(28px,4vw,56px)}
+.rk figure{margin:0;min-width:0}
+.rk canvas{display:block;width:100%;aspect-ratio:96/30;background:var(--card)}
+.rk figcaption{margin-top:12px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:clamp(18px,1.6vw,22px)}
+.rk figcaption .m{color:var(--felt)}
+@media (max-width:760px){.rk{grid-template-columns:minmax(0,1fr)}}
+.yr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(28px,4vw,56px);border-top:1px solid var(--ink)}
+.yr blockquote{margin:0;padding:22px clamp(12px,1.6vw,24px);border-left:1px solid var(--rule);display:flex;flex-direction:column;gap:18px;min-width:0}
+.yr blockquote:first-child{border-left:0;padding-left:0}
+.yr .m{color:var(--felt)}
+.yr p{font-weight:300;font-size:clamp(20px,2vw,30px);line-height:1.2;letter-spacing:-.02em;color:#a4a4a1}
+.yr footer{display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:center;margin-top:auto;padding-top:12px}
+.yr canvas{display:block;width:48px;aspect-ratio:4/5;background:var(--card)}
+.yr cite{font-style:normal;font-size:15px}
+.yr cite span{display:block;color:var(--felt);font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+@media (max-width:760px){.yr{grid-template-columns:minmax(0,1fr)}.yr blockquote{border-left:0;padding-left:0;border-bottom:1px solid var(--rule)}}
+.kt{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,5vw,96px);align-items:stretch}
+.kt .m{color:var(--felt);display:block;margin-bottom:14px}
+.kt canvas{display:block;width:100%;aspect-ratio:72/34;background:var(--card);margin-top:clamp(20px,3vw,40px)}
+.rk2{margin:0;display:grid;border-top:1px solid var(--ink)}
+.rk2 div{padding:clamp(14px,2vw,26px) 0;border-bottom:1px solid var(--rule);display:grid;gap:6px;align-content:center}
+.rk2 dt{font-weight:300;font-size:clamp(48px,7.4vw,118px);line-height:.95;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+.rk2 dd{margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:clamp(17px,1.5vw,21px)}
+.rk2 dd .m{color:var(--felt);margin:0}
+@media (max-width:860px){.kt{grid-template-columns:minmax(0,1fr)}}
+.yu{display:flex;justify-content:space-between;align-items:end;gap:16px 40px;flex-wrap:wrap}
+.yu .m{color:var(--felt);display:block;margin-bottom:14px}
+.yu .soz{max-width:34ch}
+.vk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.4vw,20px);margin-top:clamp(28px,4vw,56px)}
+.vd{position:relative;display:block;background:var(--card);padding:clamp(6px,.8vw,12px);text-decoration:none;color:inherit;min-width:0}
+.vd canvas{display:block;width:100%;aspect-ratio:4/5}
+.vd .oy{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:clamp(48px,5vw,72px);aspect-ratio:1;border-radius:50%;background:var(--ink);color:var(--card);display:grid;place-items:center;font-size:clamp(14px,1.4vw,20px);padding-left:4px;transition:transform .5s cubic-bezier(.19,1,.22,1)}
+.vd:hover .oy{transform:translate(-50%,-50%) scale(1.14)}
+.vd .at{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:12px 2px 4px}
+.vd .at .m{color:var(--felt)}
+.vd:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+@media (max-width:700px){.vk{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.vk .vd:nth-child(3){display:none}}
+.yk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(14px,2vw,28px);margin-top:clamp(28px,4vw,56px);align-items:start}
+.kol{display:grid;gap:clamp(14px,2vw,28px)}
+.kol.k2{margin-top:clamp(20px,3vw,44px)}
+.yk blockquote{margin:0;background:var(--card);border-radius:28px;padding:clamp(22px,2.6vw,36px);display:flex;flex-direction:column;gap:clamp(28px,4vw,64px)}
+.yk p{font-size:clamp(17px,1.5vw,21px);line-height:1.6;color:var(--felt)}
+.yk footer{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:12px;align-items:center}
+.yk canvas{display:block;width:52px;aspect-ratio:1;border-radius:12px;overflow:hidden}
+.yk cite{font-style:normal;font-weight:600}
+.yk footer span{font-weight:600;white-space:nowrap}
+@media (max-width:700px){.yk{grid-template-columns:minmax(0,1fr)}.kol.k2{margin-top:0}}
+.ss{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,5vw,96px);align-items:start}
+.ss canvas{display:block;width:min(100%,300px);aspect-ratio:1;background:var(--card);margin-top:clamp(20px,3vw,40px)}
+.sl{border-top:1px solid var(--ink)}
+.sl details{border-bottom:1px solid var(--rule)}
+.sl summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-size:clamp(19px,1.9vw,27px);font-weight:300;letter-spacing:-.015em;line-height:1.2}
+.sl summary::-webkit-details-marker{display:none}
+.sl summary i{flex:none;width:18px;height:18px;position:relative}
+.sl summary i::before,.sl summary i::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--ink);transition:transform .4s cubic-bezier(.19,1,.22,1)}
+.sl summary i::after{transform:rotate(90deg)}
+.sl details[open] summary i::after{transform:rotate(0)}
+.sl summary:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.sl details p{color:var(--felt);max-width:56ch;padding:0 0 22px;font-size:17px;line-height:1.45}
+@media (max-width:860px){.ss{grid-template-columns:minmax(0,1fr)}.ss canvas{display:none}}
+.sg{display:flex;flex-wrap:wrap;border:1px solid var(--ink);border-radius:75px;padding:4px;gap:2px}
+.sg button{font:inherit;font-size:16px;color:var(--ink);background:none;border:0;border-radius:75px;padding:9px 20px;cursor:pointer;transition:background .4s cubic-bezier(.19,1,.22,1),color .4s cubic-bezier(.19,1,.22,1)}
+.sg button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.sg button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.pg{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.9fr);gap:clamp(24px,5vw,96px);align-items:end;margin-top:clamp(28px,4vw,56px);padding-top:clamp(20px,3vw,40px);border-top:1px solid var(--ink)}
+.pn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,32px);min-height:clamp(120px,17vw,250px);align-items:end}
+.pn b{display:block;font-weight:300;font-size:clamp(72px,13vw,210px);line-height:.82;letter-spacing:-.06em;font-variant-numeric:tabular-nums}
+.pn div>span{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:14px;padding-top:10px;border-top:1px solid var(--rule);font-size:clamp(17px,1.5vw,21px)}
+.pn .m{color:var(--felt);font-style:normal}
+.pn .ozel{grid-column:1/-1;font-weight:300;font-size:clamp(56px,10vw,160px);line-height:.9;letter-spacing:-.05em;margin:0}
+.pd ul{display:grid}
+.pd li{padding:11px 0;border-bottom:1px solid var(--rule);font-size:17px}
+.pd .en{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--felt);margin:14px 0 22px}
+@media (max-width:860px){.pg{grid-template-columns:minmax(0,1fr)}}
+.yh{background:#0d0d0d;color:#f4f2ed;padding-block:clamp(48px,7vw,104px)}
+.yi{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr) auto;gap:clamp(20px,4vw,64px);align-items:end}
+.yp{position:relative;margin:0;min-width:0;max-width:420px}
+.yp .ucgen{position:absolute;inset:0;background:#4b2459;clip-path:polygon(0 68%,100% 4%,100% 100%,0 100%)}
+.yp canvas{position:relative;display:block;width:100%;aspect-ratio:4/5}
+.ym{align-self:center;display:grid;gap:16px;justify-items:start;min-width:0}
+.ym .m{color:#a9a7a2}
+.ym blockquote{margin:0;font-weight:300;font-size:clamp(24px,3vw,44px);line-height:1.14;letter-spacing:-.025em;max-width:22ch}
+.kim2{font-size:17px}.kim2 span{display:block;color:#a9a7a2;margin-top:4px}
+.yv{position:relative;display:block;width:clamp(160px,17vw,250px);aspect-ratio:16/9;border:1px solid #3a3a38;border-radius:10px;overflow:hidden;color:#0d0d0d;text-decoration:none}
+.yv canvas{display:block;width:100%;height:100%}
+.yv span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:#f4f2ed;display:grid;place-items:center;font-size:13px;padding-left:3px;transition:transform .4s cubic-bezier(.19,1,.22,1)}
+.yv:hover span{transform:translate(-50%,-50%) scale(1.15)}
+.yv:focus-visible,.ym a:focus-visible{outline:1px solid #f4f2ed;outline-offset:4px}
+@media (max-width:900px){.yi{grid-template-columns:minmax(0,1fr)}.yp{max-width:300px}}
+.nu{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.yz{margin-top:clamp(24px,3.4vw,48px);border-top:1px solid var(--ink)}
+.yz a{display:grid;grid-template-columns:clamp(56px,6vw,88px) minmax(0,.34fr) minmax(0,1fr) auto;gap:8px clamp(14px,2vw,32px);align-items:center;padding:16px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:inherit;transition:padding .6s cubic-bezier(.19,1,.22,1)}
+.yz a:hover{padding-left:14px}
+.yz canvas{display:block;width:100%;aspect-ratio:4/5;background:var(--card)}
+.yz .m{color:var(--felt)}
+.yz h3{font-weight:300;font-size:clamp(21px,2.5vw,38px);letter-spacing:-.025em;line-height:1.08}
+.yz .ok{font-size:22px;font-weight:300}
+@media (max-width:700px){.yz a{grid-template-columns:56px minmax(0,1fr)}.yz .m{grid-column:2}.yz h3{grid-column:2}.yz .ok{display:none}}
+
+.tk{background:#000000;color:#f4f2ed;padding-block:clamp(48px,7vw,112px)}
+.tk .ic{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,72px);align-items:center}
+.tk p{color:#a9a7a2;max-width:36ch;margin-top:16px}
+.tk .afis{max-width:460px;justify-self:end;width:100%;color:var(--ink)}
+.tk form{position:absolute;left:6%;right:6%;top:47%;transform:translateY(-50%);pointer-events:auto;background:var(--ink);color:var(--card);padding:2px 6px 2px 12px;font-family:var(--mono);font-size:clamp(11px,1vw,14px);letter-spacing:.04em}
+.tk .sat{display:flex;align-items:center;gap:8px;min-height:40px}
+.tk .sat button{margin-left:auto}
+.tk .sec2{display:flex;flex-wrap:wrap;gap:6px;padding:2px 0 10px}
+.tk .sec2 button{border:1px solid #6a6a68;padding:7px 10px;text-transform:lowercase}
+.tk .sec2 button[aria-pressed="true"]{background:var(--card);color:var(--ink);border-color:var(--card)}
+.tk form.hata{animation:titre .3s}
+.tk form.hata .sat{box-shadow:inset 0 -1px 0 #de54d6}
+@keyframes titre{25%{transform:translate(-4px,-50%)}75%{transform:translate(4px,-50%)}}
+.tk form label{text-transform:uppercase;color:#a9a7a2}
+.tk form input{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;flex:1;min-width:0;padding:10px 0;caret-color:#de54d6}
+.tk form input:focus{outline:0}
+.tk form:focus-within{outline:1px solid #de54d6;outline-offset:3px}
+.tk form button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:8px 10px}
+.tk .bas{position:absolute;left:50%;top:47%;transform:translate(-50%,-50%);background:var(--ink);color:var(--card);border:0;cursor:pointer;font-family:var(--mono);font-size:clamp(11px,1vw,14px);letter-spacing:.06em;text-transform:uppercase;padding:11px 16px;white-space:nowrap}
+.tk .bas::after{content:"_";animation:kirp 1s steps(1) infinite}
+.tk .bas:focus-visible{outline:1px solid #de54d6;outline-offset:3px}
+@keyframes kirp{50%{opacity:0}}
+.tk .son2{position:absolute;left:8%;right:8%;top:47%;transform:translateY(-50%);pointer-events:auto;background:var(--ink);color:var(--card);font-family:var(--mono);font-size:clamp(11px,1vw,14px);letter-spacing:.04em;padding:12px;text-align:center}
+@media (max-width:860px){.tk .ic{grid-template-columns:minmax(0,1fr)}.tk .afis{justify-self:start}}
+.kp h2{font-weight:300;font-size:clamp(52px,15vw,250px);letter-spacing:-.05em;line-height:.9}
+.son{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;color:var(--felt);padding-block:clamp(32px,5vw,72px) 32px}
 </style>
 </head>
 <body>
-<div id="ust">
-<header class="wrap top"><a class="logo" href="/"><span>Pb</span> <i></i><b>creative.</b></a>
-<span class="m">Estd. 2021 · İstanbul</span></header>
+<div lang="tr" id="ust">
+<header class="wrap top"><a class="logo" href="#ust"><span>Pb</span> <i></i><b>creative.</b></a>
+<nav><a class="plain" href="#paket">Paketler</a><a class="cta" href="#gorusme">Tanışma görüşmesi</a></nav></header>
 <main>
 <section class="wrap hero">
   <div>
-    <p class="soon m"><i aria-hidden="true"></i>Yakında · <span lang="en">Coming soon</span></p>
     <h1 lang="en">Less noise.<br>More impact.</h1>
     <p class="lede">Kişisel marka stratejisi, içerik üretimi ve dijital görünürlük tek kreatif çatı altında.</p>
-    <p class="lede" lang="en">Personal branding, content production and digital visibility under one creative roof.</p>
-    <div class="acts"><a class="cta f" href="https://wa.me/905421952005?text=Merhaba%2C%20pbcreative%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan yazın</a><a class="cta" href="mailto:pbcreative.ist@gmail.com">pbcreative.ist@gmail.com</a><a class="plain m" href="tel:+905421952005">+90 542 195 20 05</a></div>
+    <div class="acts"><a class="cta" href="#gorusme">Ücretsiz tanışma görüşmesi</a><a class="m" href="#paket" style="text-underline-offset:5px">Paketler ↓</a></div>
   </div>
   <figure class="poster">
     <canvas id="portre" role="img" aria-label="Noktalardan oluşan portre afişi"></canvas>
     <span class="bar m" lang="en">Pb | creative.</span>
   </figure>
 </section>
+
 <section class="eyes">
-  <div class="wrap hd"><h2>Yakında.</h2><p>Site hazırlanıyor. Beklemek istemiyorsanız <a href="https://wa.me/905421952005" target="_blank" rel="noopener">WhatsApp</a> ya da <a href="mailto:pbcreative.ist@gmail.com">e-posta</a> ile yazın.</p></div>
-  <canvas id="gl" role="img" aria-label="Siyah zeminde üç boyutlu göz küreleri; aralarında gezen parlak siyah bir küreyi izliyorlar"></canvas>
-  <div class="wrap alt m" lang="en"><span>pbcreative.co</span><span>© 2026 Pb | creative.</span></div>
+  <div class="wrap hd"><h2>Bakan çok.<br>Hatırlanan az.</h2><p>Görünür olmak yetmez. İşimiz, sizi ilk bakışta ayırt edilir kılmak.</p></div>
+  <canvas id="gl" role="img" aria-label="Siyah zeminde üç boyutlu göz küreleri; aralarında gezen parlak siyah bir küreyi ve imleci izliyorlar"></canvas>
 </section>
+
+
+<section class="wrap nk" id="kimler">
+  <div class="kim">
+    <div>
+      <p class="cumle" id="cumle"></p>
+      <div class="anlat"><p id="kmetin"></p><ul id="kliste"></ul></div>
+    </div>
+    <figure class="afis"><canvas id="kc" role="img" aria-label="Seçilen meslekten birinin nokta portresi"></canvas><span class="serit" id="kserit"></span></figure>
+  </div>
+</section>
+
+<section class="wrap nk" id="katki" hidden>
+  <div class="kt">
+    <div>
+      <span class="m">Pb ne katıyor</span>
+      <h2 class="bh">Ölçebildiğiniz<br>görünürlük.</h2>
+      <p class="soz">Her ay rapor: erişim, izlenme, profil ziyareti, kaydetme, web trafiği ve arama görünürlüğü.</p>
+      <canvas id="egri" role="img" aria-label="Solda dağınık, sağa doğru yükselip netleşen nokta eğrisi"></canvas>
+    </div>
+    <dl class="rk2">
+      <div><dt>2 milyar+</dt><dd>izlenme<span class="m">örnek rakam</span></dd></div>
+      <div><dt>1000+</dt><dd>müşteri<span class="m">örnek rakam</span></dd></div>
+      <div><dt>2021</dt><dd>kuruluş<span class="m">İstanbul</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="wrap nk" id="paket">
+  <div class="yu"><h2 class="bh">Üç paket,<br>bir özel teklif.</h2>
+    <div class="sg" role="tablist" aria-label="Paket seçin" id="sg"></div></div>
+  <div class="pg" role="tabpanel" id="pgp">
+    <div class="pn" id="pn"></div>
+    <div class="pd"><ul id="pl"></ul><p class="en" id="pe"></p><a class="cta" href="#gorusme" id="pc">Bu paket için kısa bir not bırakın</a></div>
+  </div>
+  <p class="soz">Takipçi, hasta ya da satış sözü vermeyiz; üretim adedi, onay yöntemi ve aylık rapor sözü veririz.</p>
+</section>
+
+<section class="wrap nk" id="isler" hidden>
+  <div class="yu"><div><span class="m">Vaka çalışmaları</span><h2 class="bh">Referans videoları.</h2></div><p class="soz" style="margin:0">İlk çekimlerden sonra burada müşterilerimizin kendi anlatımı yer alacak.</p></div>
+  <div class="vk" id="vk"></div>
+</section>
+
+<section class="yh" id="yorumlar" hidden><div class="wrap yi">
+  <figure class="yp"><span class="ucgen" aria-hidden="true"></span><canvas id="yc" role="img" aria-label="Yorum sahibinin nokta portresi (yer tutucu)"></canvas></figure>
+  <div class="ym">
+    <span class="m">Klinik ya da şirket adı</span>
+    <blockquote>“Buraya müşterinin kendi cümlesi gelecek. İki üç satır, kendi sözleriyle.”</blockquote>
+    <p class="kim2">Ad Soyad<span>Unvan</span></p>
+    <a class="m" href="#isler" style="text-underline-offset:5px">Vaka çalışmasını oku →</a>
+  </div>
+  <a class="yv" href="#isler" aria-label="Referans videosu (yer tutucu)"><canvas id="yvc" aria-hidden="true"></canvas><span aria-hidden="true">▶</span></a>
+</div></section>
+
+<section class="wrap nk" id="sss">
+  <div class="ss">
+    <div><h2 class="bh">Sık sorulanlar.</h2><canvas id="soru" aria-hidden="true"></canvas></div>
+    <div class="sl">
+      <details open><summary>Takipçi ya da hasta garantisi veriyor musunuz?<i aria-hidden="true"></i></summary><p>Hayır. Üretim adedi, onay yöntemi ve aylık rapor sözü veririz; takipçi, hasta ya da satış sözü vermeyiz.</p></details>
+      <details><summary>Çekimler nerede yapılıyor?<i aria-hidden="true"></i></summary><p>Öncelikle sizin mekânınızda: klinik, ofis ya da atölye. Gerekirse stüdyo ya da dış mekân kullanırız.</p></details>
+      <details><summary>Ayda ne kadar vaktimi alır?<i aria-hidden="true"></i></summary><p>Kapsama göre ayda yaklaşık 2–6 saat: çekim ve yayın öncesi onaylar.</p></details>
+      <details><summary>Yayın öncesi içerikleri görüyor muyum?<i aria-hidden="true"></i></summary><p>Evet. Her içerik yayından önce tek bir onay bağlantısıyla size gelir; sağlık alanında ayrıca mesleki onayınız alınır.</p></details>
+      <details><summary>Hesaplar ve içerikler kime ait?<i aria-hidden="true"></i></summary><p>Hesaplar ve alan adları sizin. Biz yetkili erişimle çalışırız; içeriklerin kullanım hakları sözleşmede açıkça yazılır.</p></details>
+      <details><summary>Yorumlara ve mesajlara kim cevap veriyor?<i aria-hidden="true"></i></summary><p>Siz ya da ekibiniz. Biz etkileşim için yönerge hazırlarız; hasta verisi ve tıbbi mesajlar sizde kalır.</p></details>
+      <details><summary>İstanbul dışında çalışıyor musunuz?<i aria-hidden="true"></i></summary><p>Evet. Türkiye genelinde uzaktan yönetim ve gerektiğinde yerel çekim ekibiyle çalışıyoruz.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="wrap nk" id="notlar" hidden>
+  <div class="nu"><h2 class="bh">Notlar.</h2><a class="m" href="#notlar" style="text-underline-offset:5px">Tüm yazılar →</a></div>
+  <div class="yz" id="yz"></div>
+</section>
+
+<section class="tk" id="gorusme"><div class="wrap ic">
+  <div><h2 class="bh">Kısa bir not<br>bırakın.</h2><p>Yedi kısa soru. Sonrası 15–20 dakikalık ücretsiz tanışma görüşmesi.</p></div>
+  <figure class="afis">
+    <canvas id="tc" aria-hidden="true"></canvas>
+    <button class="bas" id="tbas" type="button">[tıkla] başla</button>
+    <form id="tform" hidden novalidate><div class="sat"><label for="tgir" id="tsoru"></label><input id="tgir" type="text" autocomplete="off"><button type="submit" id="tdev" aria-label="Devam">↵</button></div><div class="sec2" id="tsec" hidden></div></form>
+    <p class="son2" id="tson" hidden></p>
+  </figure>
+</div></section>
+
+<section class="wrap kp" style="padding-top:clamp(40px,6vw,88px)">
+  <h2>Tanışalım.</h2>
+  <p class="son m"><span><span lang="en">pbcreative.co · Estd. 2021</span> · İstanbul</span><span><a href="https://wa.me/905421952005" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:pbcreative.ist@gmail.com">pbcreative.ist@gmail.com</a> · <a href="tel:+905421952005">0542 195 20 05</a></span></p>
+</section>
+
 </main>
 </div>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -191,5 +474,121 @@ ul,ol{margin:0;padding:0;list-style:none}h1,h2,h3,p{margin:0}h1,h2{text-wrap:bal
 })();
 });
 </script>
+<script>addEventListener("DOMContentLoaded",function(){
+(function(){
+var KIM=[
+ ["doktorlar","Doktorlar","Hastalar randevudan önce sizi arıyor ve izliyor. Uzmanlığınızı bilgilendirme diliyle, sağlık tanıtım kurallarına uygun anlatırız.",["“Hastam en çok bunu soruyor” serisi","Klinikte bir gün","Kısa bilgilendirme videoları"],"Doktor önlüğü giymiş, kameraya bakan bir adamın yakın portresi"],
+ ["diş hekimleri","Diş hekimleri","Koltuk korkusunu azaltan şey tanıdık bir yüzdür. Kliniğinizi ve yaklaşımınızı, vaat vermeden gösteririz.",["Tedavi öncesi sık sorulanlar","Klinik turu","Ekip tanıtımı"],"Muayenehanesinde gülümseyen genç bir diş hekimi"],
+ ["avukatlar","Avukatlar","Müvekkil, anlaşılır konuşan avukata güvenir. Reklam yasağının sınırları içinde, bilgilendirici içerikle görünür olursunuz.",["Üç soruda bir konu","Güncel karar yorumu","LinkedIn yazıları"],"Ceketli, gülümseyen bir kadının portresi"],
+ ["mimarlar","Mimarlar","İşiniz zaten görsel; eksik olan sizin sesiniz. Projelerin arkasındaki kararı anlatırız.",["Şantiyeden notlar","Bir projenin hikâyesi","Malzeme seçimi"],"Beyaz fon önünde, siyah boğazlı kazaklı, kollarını kavuşturmuş genç bir kadının portresi"],
+ ["kurucular","Kurucular","İnsanlar şirketleri değil, kurucuları takip ediyor. Hikâyenizi yatırımcıya, adaya ve müşteriye aynı anda anlatırız.",["İlk yılın dersleri","Ürün kararı günlükleri","LinkedIn serisi"],"Gözlüklü, eli çenesinde düşünen bir adamın portresi"],
+ ["CEO'lar","CEO'lar","Liderin görünürlüğü şirketin itibarıdır. Görüşlerinizi düzenli ve ölçülü bir yayına çeviririz.",["Sektör yorumu","Konuşma kesitleri","Uzun format söyleşi"],"Kollarını kavuşturmuş, takım elbiseli bir adam"],
+ ["danışmanlar","Danışmanlar","Bilginiz ürününüz. Onu, arandığınızda bulunacak içeriğe dönüştürürüz.",["Vaka anlatımı","Kısa eğitim videoları","Blog ve SEO/GEO"],"Açık fon önünde, ceketli, hafif gülümseyen genç bir adamın portresi"]];
+
+var IZ={"b":["dddddddddddddddddddddddccccccdeccecccabcccccccccccccccccccccccccddddddddddddddddddddccccccdeeefdcedccbaaccccccccccccccccccccccccddddddddddddddddddddccccdefffffeceeeeecaccccccccccccccccccccccccdddddddddddddddddccccccdefffffffddffffebbcccccccccccccccccccccccddddddddddddddddcccccccefffffffffedddffdbcccccccccccccccccccccccdddddddddddddddddccccccfffeddeedb97667cfdcccccccccccccccccccccccddddddddddddddddddccccdffc9888766555444adcccccccccccccccccccccccddddddddddddddddddccccefd9887766655543349aacccccccccccccccccccccdddddddddddddddddddccdffa987766665554333599bccccccccccccccccccccddddddddddddddddddcccdfe9988766666554332478accccccccccccccccccccdddddddddddddddddccccdfd99887666665443333679ccccccccccccccccccccddddddddddddddccddcccdfda9987665555433333579ccccccccccccccccccccdddddddddddddddccdcccdfda9998765566876532369ccccccccccccccccccccdddddddddddddddccccccdfcaccdec8668cddbba9768ccccccccccccccccccccdddddddddddddddccccccdfeedcccddccedb9777cca8ccccccccccccccccccccdddddddddddddccccccccdeebaabcbcfecaca8868dcaccccccccccccccccccccdddddddddddcdcccccccccfe9cddcccc7cabb9767ac99cccccccccccccccccccdddddddddddccccccccccced9cccbcea5a98986476447bccccccccccccccccccddddddddddddcccccccccbcc99aa9bd956a6665484446accccccccccccccccccdddddddddddddccccccccbbbb999adb8537a9888624659bcccccccccccccccccddddddddddddddcccccccbaaabbbbb986448986323575accccccccccccccccccddddddddddddddccccccdbba988899bb8886875333645bbcccccccccccccccccdddddddddddddddcdcccdbab98789addba97776433636ccbbcccccccccccbcccdddddddddddddddddcccdbac989abdeccba998655688bdcccccccccccccb9ccbddddddddddddddddddddccadb9addcba998adb76999ceddccccccccccccb9cbadddddddddddccdddcccccdceeabdeeb98779ab88aa76cccccccccccccccb9bb9ccdcccdddcbbbcccb9bbcddefdccaba887544999bb55cccccccccccccccb9aa8ccdcaabcdcccbbbcb9acddddffdc999a9864489acb36cccccccccccccca87898cddcaaabccbcbbccba9bcdddffeea9acb96559bcd827dddccddddcccdc967888dddcbababdcccbbcbaaabdddefffc98997568abdb326aaa99999998888755555dddbaabbcdcbccba9abbcddddfffeca88889bbcc522333333333333333222233cccaaccbdbaaccbaccbcddddecdffecbbbbbcdb6323333344444444555555544ba8accccdcaacccdddddeeeda9ceffedddddeb744154236bcccddddddeeeee94a979bcccdb9acbcdcdeeeee866bcdfffeeeeb6553076105dffffffffffffffa4bb99bcccc989bbcdcdddee96966bccdddcb855651049301bffffffffffffffa4cccccccdcca99bcbcccde96e9666accba9855651002c5102cfffffffffffffa4dddddddccc988bdccccd95ef755658cba9767510003d71002bffffffffffffa4dddedcccdc999abdfd864bfc6555557999886321103d9200005ceeeeeeefffa4eeeedcbcdcdbaccca5437fb875555bb6569b9210112ba20000124799999dffa4eeeeedacddeddd954444dd58a555bfebbbacf900111ab10001210025777dffa4eeeeedcdeeec74444438f847d658cdeedcbcca301119c10001210000158abb84eeeeeedeed943443435dc545e86a99aedbb968811018c200112101000017dc74eeddeeefc6334343338d6434db77778ddb9546830018c200123011011002ef84eedeeeee6333433235ccabb7be64677cea5346420017d3122430110200005f84eeddbcc84332333229dddddeed63566bdb7354210017d4112320211200000994dddcaba4343233325cb95448de63356bdb9343200017d4111320221100000274cdddcd73333223229c6443128e64346cdba643100017d4012320221001000055ddddcc5333322324ba3234326e74348ddca941000017d4012311222011000024deedc94423331326c72222338c5433addcaa40000117d5022211222011100004eeeec7343233232795222224b933339ddca810000127d5222211222122000003eeeed64333232223433212249723326ddca301001227d6222212221122000002eeefb45433223223333211244432222acc7000002227d7322201221231010002eeef8444432232333332112433432224cb2010012126d7232101222320111000eeee6443343232323332112422343232660011012116d7232101222311110000edde6343234223322333113311234322100111012116d7122101222212111000edef8244224334312333213211223332200111122116d7222102323222110000edee7323323434312333223111122233220111121116d8222102323222211000eefe6432332344321234332112212222321011221216d8222112223222211000effd5442232244332234431111211221232011212226d8222112233233221100eee84344222234344323421111121111234111212226d8221112333333321011eed55334422333343433342110122111123311122226d8212112333334321121efa354223429d9543444443111112111122321122226d8222112433566422220ee6444322337a8555565454122112111212221222227e9322223546887555310eb344432223332345656aa7213211111211222222238fb322345567876776310ec333333212223335658ee9312321111211222222236a7222366787656775442fe54332221112223475568642133211111112222226bb7223467898677666531fe7443311111111235555555313431111111223226dffe823478987886565311dd844443111111113555555542243211111122323bfeefd43589989976655521dd944444211110113544444554234310111112334ceeeef74689899877665311dea44443321110114555555666556511111112334beeeef85898897798643221eeb444332211110167787777666676222121111124889a944765553376433311eed4443222210002777777776666762311222111100001011111222211232332ffd5433222210004777777777666763432222111111112122222232322222244ffe6432222211112577777777666852333323222221122212332221332332234ffe6544433222221026777766777963323333222221123321233332342333134ffe7544443332221101367778888964433544222232123332123332243233224fff7554433332221111112578999964433554222233212443212333234224323fff845433333322211111113379a974444555222122232244432233324412432fff9454433333332222211222357974534555566654333223443233323431343fffa554443333322222222311234586544554555677434322445433332442134","ccbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbcbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaabbbbbaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbabaaaaaaaaaaaabeedddefebaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaacffebceffffcaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaacfffeacefffffcaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaabfffec89bdfffffbaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaeffc7545569dfffdaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaabffd64333346aefffaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaacff9543333457cfffbaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaadfc64444445678dffcaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaadfa9aa9558ccbacffdaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaade99acb76aca9bbefdaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaadd9bccc849bdec9cecbaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaabbc8cdb75367ab96adcbaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaabca6665443454446adacaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaacd97433454564346aaaeaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaace8855579aba8668b8debaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaadfa888867898799abbfebaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaadfea89a999abba9adffecaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaabeefd8778a9aa878bffffdbaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaabeeffa865799768adffffecaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaacfeefea8645568abffffffdbabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaadfeeffea98889abcffffffebaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeffffffcbaaaabcdffffffecaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaabeffffffccbbbccccfffffffdbabbbbbbbbbbbbbbbbcbbbbbbbbbbbbbbbbbabacffefffeabbbbccbbeffffffebabbbbbbbbbbbbbbbbcbbbbbbbbbbbbbbbbbbbadfeefffc99abbbaaadffffffecbbbbbbbbbbbbbbbbccbbbbbbbbbbbbbbbbbbbbeffffea78899aa999adcdfffecbbbbbbbbbbbbbbbbccbbbbbbbbbbbbbbbbbbbcfeefd62388889889955d7cfffcbbbbbbbbbbbbbbbccccbbbbbbbbbbbbbbbba9a87da411167788778632a928accbbbbbbbbbbbbbbbbcccbbbbbbbbbbbbbbb82110ba20110356666663105b0001446abbbbbbbbbbbbccccbbbbbbbbbbbbba510104d400110144444440103b10100114abbbbbbbbbbbcccbbbbbbbbbbbbba3001115ca73000024444310002c2011112039bbbbbbbbcccccbbbbbbbbbbbbb81100018cbab200013433200211c3000111005bbbbbbbccccccbbbbbbbbbbbba3010002c610a500004753100110b70211101139bbbbbbbcccccbbbbbbbbbbbb51001003c20096000046640012008a0110101234bbbbbbbbccccbbbbbbbbbbc811000012c400a6000011310011004b11002112219bbbbbbbbcccbbbbbbbbbbb411000111970075000001100010002c31012112116cbbbbbbbbcccbbbbbbbbca211000111690032000002011010001b41011012213bbbbbbbbbbccbbbbbbbbca021000121250032000000120000001b510110121018cbbbbbbbbcbbbbbbbbbba111011121041032000002200000002c410111210015cbbbbbbbbcbbbbbbbbbc9101011121032032000011000000003b310121110112abbbbcbbbcbbbbbbbbbc6101101122023032000000000000006a1001111011218cbbbbbbcccbbbbbbbbb310011112211403201520000000000970012210011306cbbbccccccccbbbbbca200001112210414207c40000000003b30113200012204bbbbccccccccbbbbbc7100000119921454245411110000007a21123200011112acbcccccccccbbbbbb521000112793345542022110111103b5232131002431218ccbbcccccccbbbbb9221000146233223321332100221119a2233231136762105cbbccccccccccbbc712110018b34433332232111122216c52344333568842203bccccccccccccbbc51110012696544432222211112223ca32343345666567643bccccccccccccccb41112222377644432211211123686a643344455457999a54bccccccccccccccb312345542777544311111101256886543345655555667635ccccccccccccccca222221210248644311111111152675533356555568887225ccccccccccccccc913431001101211342111112117a9a9634665556776552225ccccccccccccccc623101111100000011111000004789a656655445567511225ccccccccccccccc4210121101000001111100000000012565443345985222234bcccccccccccccb201221100100001111110000001000144433357a820121233bcccccccccccccb2122111001000111100100011100002444456885101111322acccccccccccccc5321011111011111000001112211005766688410110122203ccccccccccccccc7321221111111100000112211111119b98763111111133448dcccccccccccccc933332111111100011122211110003a74210111122123345adccccccccccccccb32211111110001122222111100004511111111111123445bdddcccdccccccccc83211111111122222211100000015311111111111124446cdddddddcccccccccc9643221112222111111000000026311111112111234457cddddddddccccccccccb86531111111000000000000046321000122222355559dddddddddcccccccccccb976543211000000000000006532211122222355557bdddddddddcccccccccccdc8778776432211111111002753333222322345557bddddddddddcccccccccccca899888899997533222211375433322333345669cdddddddddddcccccccccccc87899aabcccccb866533225533333223334468bdddddddddddddccccccccccdb6788999aaaaa9a87888765641122323344469adddddddddddccdccccccccccd856788999aa9999834567875311112223447abbbddddddddddcccccccccccccc55667788889888872223344321111113579bcbaadddddddddddccccccdccccd945566777777777663112333322234569bccbbba9bddddddddddcccccccccccd6445566676666655543444445679abbbbbbbbba979dddddddddddddddddddddb444455666655555455566789abbbbbbbbbbbaa9877ddddddddddddddddddddd9334455556555544445699aaaaaaaaa989aaa988765beddddddddddddddddddd73334445554555433445887788888776679988776559edddddddddd","222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222122222222222222222222222222222222222222222222222221121212212211111122221111222222222222222222222222222222222222222122111111111111111221111111222222222222222222222222222122221212111111111111111111111111111112222222222222222222222222111111211111111111111111111111111111111111122222222222222222221111111111111111111111111111111111111111111111222222222222222222222111111111111111111111111111111111111111111111222222222222222222221111111111111111111111111111111111111111111111122222222222222222211111111111111111111111111111111111111111111112222222222222222211111111111111112675421111111111111111111111111112222222222111111111111111111114adccca721111111111111111111111111112222222221111111111111111114bb957bcca3111111111111111111111111112222222221111111111111112229a200029ddb31111111111111111111112212222222222211111111111111117b3000001bdd9111111111111111111111212222222222111111111111111113a900000005dcc511111111111111111111122212222222111111111111111116b710000132acc911111111111111111111211211111111111111111111111118c998007a746eed2111111111111111111111111111111111111111111111111acc75207a874dff4111111111111111111111111111111111111111111111112bca630025441aff7111111111111111111111111111111111111111111111112ca20000000007ff9111111111111111111111111111111111111111111111113c900112200027ffa111111111111111111111111111111111111111111111115da10277400037ffb111111111111111111111111111111111111111111111116dc21011000126ffb111111111111111111111111111111111112211111111118ed41788730127ffa11111111111111111111111111211112221111111111112aef7235532233aff911111111111111111111111122222221222222221222222befc300000247eff611111111111111111111111222222111112222222222223cfffa31114669ffe421111211111111111111111222222222222222222222223dffffb9877659ffd221111111111111111111111222222222222222222222224efff98aa9754bffa122111122111111111111111222222222222222222222225fffc204776448ef8122122221222222221111111222222222222222222222219fffd2002554469f712222222222222222222222222222222222222222222125ddccdb000043473f9122222222222222222222222222222222222222222236accccccda00013441db4212222222222222222222222222222222222222226accccdcddcd60000003eddb852122222222222222222222222222222222223adddcccdddddcd4000004ddededa742222222222222222222222222222222227dddcccccedcccdc000001bddddddeb322222222222222222222222222222222adddddddcdecddddb000009dddddddd522222222222222222222222222222222bcccccccddedcdccd700005dddddddd932222222222222222222222222222222cddddddccdeecddccd30002cccdddddd82322222222222222222222222222222addddcdddddedcddccc0000bccdddeddc42222222222222222222222222222226dccdddccddedccddcd9000adddddedde72332222222222222222222222222225ddcddddddeeedccddcd5008dcdddeeedb3333322222222222222222222222225cdddddddddeeddccddcc006dddddeeded5333322222222222222222222222324cdcccdcdddeeddddcddda03dddddeeddda333332222222222222222222222233bddddddddddeddddddddd32dddddeeddec5333333322222222222222222222328dddccdcccdfddddddddd83dddddeeeedd9333333322222222222222222222325ddddddccdeedddddddedb7ededeefebadc533333333222222222222222222222bdddddcddddededdddeedceeeeefab46ad9333333333222222222222222222228dddccccdddeeeeeeededeeeeeef98246dc533333333323322222222222222325dddddddcdddfeeeeeeeeeeeeeed74218dda34333333332322222222222223322addddddddcdffffeeeeeeeeeefb62223cdc444333333333322222222222222327dddddccdddedddcabdcccddcda42336ddd834433333333333322222222333324cdddddcccda105800adcccdcddbbcccdded834333333333333222222333333328dddccddccd4030404cddddddddddddddddb44443333333333322222323333327dddddddcdde8475008ddcdddddddddddded54444333333333333222233333328edddddceddedada478cddddddddeeeeeeee64444433333333333332333333327edddccdddedddddee78dddddddeeeeeeeed54444433333333333333333333325deddddddeeddddddeb9deeeeeeeeefeeefb44444443333333333333333333334dfeddeeeedddddddeeedeeeeeeeeeefffe844444443333333333333333333325efedddedddddeeeeffeeeeeeeeeffffeb7444444443333333333333333333328eedddddeeeeeeeeeeeffffffffeddb975454444444433333333333333333333cededeeeffffeeddddeffffffff9555555555444444433333333333333333335dddeeffffffffffffffffeeffff9565555555444444433333333333333333327ddddeffffffffffffffffffffffb66655555544444443333333333333333332adddddefffffffffffffffffffff966665555544444443333333333333333334bdddeefffffffffffffffffffffe766666555544444443333333333333333335deeeeeeefffffeeeeeeedeeeeeee966666655544444443333333333333333338edddddeeeeeeeeedddddddeeeeefb6666665554444444333333333333333333aedddddddddeededddddddeeeeeeed6666665554444444333333333333333334ceddddddddddddddddddddeeeeeeee8666665555444444333333333333333336ddddddddddddddddedddddfeeeeeee8666665555444444333333333333333337edddddddddddddddedddddfeeeeeef967666655544444433444433333333333aeddddddddddddddeedddddfeeeeeef967666655544444444444433333333334cdddddddddeeeddddeddddefeeeeeefa67766655544444444444444333333436dddddddddeeedddddeedddefeeeeeefa77766655554444444444444433333339deddddddeedddddddeedddefeeeeeeea7776665555444444444444433334433bdddddddddddddddddeedddfffeeeeee8777666655544444","000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000255312100000000000000000000000000000000000000000000000000000004acdeeccb9300000000000000000000000000000000000000000000000000009eedeeffeeed710000000000000000000000000000000000000000000000000afeddcdeeffedd81000000000000000000000000000000000000000000000009feeddcbaabdfecc600000000000000000000000000000000000000000000006feeddb865568cedcc3000000000000000000000000000000000000000000002eeeedd86543346bedd800000000000000000000000000000000000000000000afeeedb765432236cedd40000000000000000000000000000000000000000005fededd96643322248dded200000000000000000000000000000000000000001dfefedc965432222269ccfa00000000000000000000000000000000000000007feffecb98987422237accde5000000000000000000000000000000000000000afeeeddc9778874346addbcda200000000000000000000000000000000000000afeeeeec99a76752469cdcbc9400000000000000000000000000000000000005efeeeeda9dda77824aeeedcda320000000000000000000000000000000000037dfededc989974683369ccdccc720000000000000000000000000000000000135eeedecba7543468422379bccbb50000000000000000000000000000000000314ffdcdcdb7643478312249ddccb7000000000000000000000000000000000042afecccddc865359a643239edddc6000000000000000000000000000000000038fedddcedd975447974224bebcec310000000000000000000000000000000003eeeeedddbca75566643335deccdd500000000000000000000000000000000004edfeeddcbda755aa988649edccddb10000000000000000000000000000000005eefeeeedbda8547987535beeddcce30000000000000000000000000000000005ebdeeeecceb8654443237deeeedcb80000000000000000000000000000000025dddeeeebedca86532124bedeeeeb844000000000000000000000000000000033edcddcededddba87656bfedddeea702300000000000000000000000000000130bebd86eecdeeeddddcdeeeeddeb83002100000000000000000000000000002201aee84edaceeeeeeeeedeeeddc5810001000000000000000000000000000021101cbb0adcceeefffffeeeeedca4700012000000000000000000000000000021001aab05eddeeeeeeeeeeeeddcb45000110000000000000000000000000000120018cc19edddeeeeeeeeeeedddcab532200000000000000000000000000000012006ebbfededeeeeddeeeeeccdcddeecb94000000000000000000000000000000105edeedcddeeeeeeeeeedcddccdeedefeb2000000000000000000000000000016ceeedbccceeeeeeeeeedccedbceedeeeeb0000000000000000000000000038dfeeedbcdbdeeeeeeeeeeddcddbbdddeeedf6000000000000000000000004bffeddedcddcbdeeeeeeeeeedcbcddbcdddedeed10000000000000000000007fffeeeeeeeedbcdddddddeeeeddcccdcccddedeee3000000000000000000006ffffeeeeeeedccdddddddddeeeedcbcdccdcdddede600000000000000000001dfffeeeeeeeddcddddddddddddeeddbbddcdcdddddea00000000000000000004ffeeeeeedeedddddddddddddddddddcbcccdddccdeed20000000000000000007ffeefeeedeeddddddddddddddddddddcbccdcdcddede30000000000000000009fffeeededdeddddddddddddddddddddccccdddcdeeee4000000000000000000bfffeeeeeddedddddddddddddddddddccddcdddcdedef6000000000000000000cfeeeedeeedeeddddddddddddddddddcccdcdddcddddf8000000000000000001dfeeeedeeeddeddddddddddddddddddccddcddcdddddf9000000000000000001effeeedeeeddeddddddddddddddcdddcccdcddcdddddfa000000000000000001dffeeeedeeededdddddddddddddddddcccddddddddddfb000000000000000000dffeeefddeededdddddddddcddddddddccdcddddddddfc000000000000000000cfffdeedddeeeeddddddddddddddcdddccdcdeddddedfc000000000000000000bebefedddddeeedddddddddcddddcdddccdddeddddeded100000000000000000ad66ceddddeddeedddddddddddddddddccdddeddddeeed1000000000000000009fc8deeeddeeedddeddddddddddddddddddddeddddeeed1000000000000000008ffefeeeddddddddddedddddddddddddddddeeddddeeec10000000000000000399cfeeeedddddddedddddddeeddeedddddddeeeddeedeb00000000000000000189cfeeeeeeddddeeeeddeedeeddeedeeeeddeeededdefa0000000000000000006eefeeeeeeedddddeeddeddeeeeeedeeeeeedeeeeddef90000000000000000008fffffeeeeeedeedddddcdddeeeeeeeeeeffecddedddf80000000000000000018dffeeeeeeeedeeededdddccddcdddcddddefddeedddf80000000000000000006fffeeeeeefeeeeeeedeeeedddddddcccccdfeddddeef70000000000000000005ffffeeeddeffeeeeedeeeeeeeeeeeddedddeedddccff50000000000000000003fffffeeeeddeffeeedeeeeeeeeeeeeddddddddee73df50000000000000000002ffffffffffedefffedddedddddddedddddddeeddd9de71000000000000000000dffffffffffedefffeeeeeddddddddddddeeedddeefc51000000000000000000afffffffffffeeeefeddeefffeeeeeeeeeedddddeed7410000000000000000007fffffffffffffeeeeeddeeeeeeffffeeeddddeeefb3500000000000000000003ffffffeefffffffeeedddddcddddeeddeddededeee93000000000","5556666777777777777776666666555544433332222211111122345677777766556666777777777777777766666655544443333222221111112233567777776666666777777777777777776666655554443333322222111111222345677777766666777777777777777777666665555444333332222211111112223456777776667777777777777777777766665555444433333222221111111122345667777767777777777777777777766666555544443333322222111111112223456677777777777777777777777776666555544443333322222211111111122345566777777777777777777777777666655554444333332222222111111112233456666777777777777777777777666655555444433333222222211111111122334566667777777777777777777766665555444443333322222221111111112233455666777777777777777777766665555544443333332222221111111111222334556677777777777777777766666555544443333333222222211111111112233445667777777777777777766666555544444333333222222221111111111222334555777777777777777766666555554444433333322222221111111111122223344577777777777777766666655554444433333332222222211111111112222333447777777777776666666655555444443333333322222221111111111222223334777777777776666666655555444444333333332222222111111111112222233377777777776666666655555544444433333332222222211111111111122222337777777776666666655555544444433333333222222222111111111111222223777777776666666555555444444433333333322222222211111111111112222277777776666666555555444444443333333332222222221111111111111122227777776666666555555544444443333333332222222221111111111111111222777766666666555555444444443333333333222222222111111111111111122277776666666655555444444443333333333322222222211111111111111111127766666666655555544444443333333333322222222221111111111111111111766666666665555444444443333333333332222222221111111111111111111166666666666555544444444333333566532222222222111111111111111111116666666666555544444443443359cdfedc7222222222111111111111111111116666666666555544444433435aeffeefefd42222221111111111111111111111676666666655544444443336cfffeffffff6222222111111111111111111111176666666665554444443334cffffffebcff9222221111111111111111111111176666666665554444443336fffffdb979efc322221111111111111111111110076666666655554444433337ffeba76689bdd422221111111111111111111010076666666655554444433335ffc96659cbbad932222111111111111111110000066666666665554444433333afbb967caa99b9622111111111111111111000000666666666555544443333334dedcb8abb87a97221111111111111111101000006666666665555444433333339dbcb8776469a7221111111111111101000000006666666665555444433333337dba98675569b6221111111111100000000000006666666665555444433333335c7678598999b32211111111111000000000000066666666655554444333333339857cccccaab3121111111111000000000000006666666665555444433333335ca7aeb7776bc322111111111100000000000000666666666555544443333334dfdacc86879eb221111111111000000000000000666666666555544443333339fffe97ab96cfb22111111111100000000000000066666666555554444333333bffffec99abeea41111111111100000000000000066666666555544444333333bffffffecdefb8864111111111000000000000000666666655555444443333338fffffefffff8889c8311111110000000000000006666666555554444443333339feeecffff9777befd9411111000000000000000666666555555444444443338ceeeedbcb967adeeeeed930111000000000000006666655555554444444436cffeeeefedccceeeeeeeeeed720100000000000000666655555555444444449effeeeeeeefffeeeeeeeeeeeeeb201100000000000066666555555544444438ffeeeeeeeeeeeeeeeeeeeeeeeeee91111100000000006665555555554444444dfeeeeeeeeeeeeeeeeeeeeeeeeeeee6011110000000005555555555544444448ffeeeeeeeeeeeeeeeeeeeeeeeeeeeec31111101000000555555555555444444cffeeeeeeeeeeeeeeeeeeeeeeeeeeeee80111111000000555555555554444446efffeeeeeeeeeeeeeeeeeeeeeeeeeeeeb2111111000000555555555554444448fffffeeeeeeeeeeeeeeeeeeeeeeeeeeed311111100000055555555554444444afffffeeeeeeeeeeeeeeeeeeeeeeeeeeee601111100000055555544444444444bfffffeeeeeeeeeeeeeeeeeeeeeefeeeee701111110000044444444444444444cffffffeeeeeeeeeeeeeeeeeeeeeffeeee811111111000044444444444444444dffffffeeeeeeeeeeeeeeeeeeeeffeeeee911111111000044444444444444446efffffffeeeeeeeeeeeeeeeeeeeffeeeefc21111111110044444444444444437ffffffffeeeeeeeeeeeeeeeeeeeffffedc921111111111044444444444444436bbcdeefffffffeeeeeeeeeeeeeefeca878931111111111044444444444444438a8667afffffffeeeeeeeeeefeeeed74468a5111111111104444444444444444ab8656bffffffeeeeeeeeeeeefeeee85568a7111111111103444444444444444bb8667cfeeffeeeeeeeeeeeeeeeeef96568a8111111111103334444444444435bb8668dffffeeeeeeeeeeeeeeeeeefb6568a8111111111103333333333443435ba8678effffeeeeeeeeeeeeeeeeeefd7668a9211111111113333333333333335ca878affefffeeeeeeeeeeeeeeeeefe9777aa211111111113333333333333336ca999cffefeffeeeeeeeeeeeeeeeeffb8889a312111111113333333333333337ca9a9dffeeeeeffeeeeeeeeeeeeeeffc9989b412111111113333333333333337ca998dfffeeeeeeeeeeeeeeeeeeeeffc9889b422211111113333333333333337ca9a9dfffeeeeeefeeeeeeeeeeeeeefca88ab322211111113333333333333337ca9aaeffeeeeeeeefeeeeeeeeeeeeefca88ab322211111113333333333333338ca9abeffeeeeeeeeefeeeeeeeeeeeefca89ba322221111113333333333333338ca99beeffeeeeeeeeeeeeeeeeeeeeefca99ba322221111113333333333333338da99bcafeeeefeeeeeefffeeeeeeeedc989b9222221111113333333333333337db98ab7fffffeeeeeeeeeeeefeeefbbb98ac7122222221113333333333333336da99aa9ffffeeeefffffffffeeef82ab88ac4222222221113333333333333334cb99aaafffffffffdbbccceeefff92bb99ba222222222211","00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035565321000000000000000000000000000000000000000000000000000000257989a98840000000000000000000000000000000000000000000000000001589ba9bccbba500000000000000000000000000000000000000000000000000599bb9acddccdc40000000000000000000000000000000000000000000000003999a779cddddddb2000000000000000000000000000000000000000000000018b545347acddeeed700000000000000000000000000000000000000000000004c811122357beefedb10000000000000000000000000000000000000000000007b5011223335afffdd4000000000000000000000000000000000000000000002ba20112333335cfedd8000000000000000000000000000000000000000000005fa001122333349efecb200000000000000000000000000000000000000000008fb221123466546cffcc500000000000000000000000000000000000000000009ec3552258766537fffc700000000000000000000000000000000000000000019ec2672255686534dfefa2000000000000000000000000000000000000000001aec25822676b84339baed50000000000000000000000000000000000000000019eb01213554333347a9de91000000000000000000000000000000000000000019eb1111344333445798ffc200000000000000000000000000000000000000004dfe211135533444576cffc400000000000000000000000000000000000000009def61225753455569afffc500000000000000000000000000000000000000017adfb121354335558ffffed7000000000000000000100000000000000000000169cfe41347753556bfffffeb200000000000000001100000000000000000000179cef9159ba63568effffffe600000000000000001100000000000000000000168bdef614644568cefffffffa00000000000000011100000000000000000000059abdfd3023469bceffffefec2000000000000011110000000000000000000003abbdefc4358abcdfffffeffc40000000000001111100000000000000000000138abdefffdcbabbeeffffeeeb400000000000001111000000000000000000000487bfefffffbaacdeeefeedea2000000000001111110000000000000000000005cadedfffffcaabeedefeeec40000000000011111110000000000000000000028bcdedeffffcabdefefedee943111100000111111110000000000000000000169bceedefffecbbdeeeffdddcb8655442001111111110000000000000000000256acefeefffecbcdeeeffddddca877676200111111110000000000000000012358ceefeeffeecccdfffffededcb97668641011111111000000000000000003457accdeedeffffecdefffffdedca987886520111111110000000000000000145777a99deeefd89caceffeffeffedb87976651111111110000000000000002346777a98ceddfc657adffffffffeeec998688630111111100000000000000123467769bbceedfb669cdefeffffffedc988988740111111100000000000000243468858cc9deefa57abcefefefffffeaa898777511111111000000000000012453699acbcbeeed9559bdeeffefffffd9a98777751111111100000000000001336469adecbcceed7468adeffffeffffd9b877777611111111000000000000013454698ccdccdffe637addefffedefffdba777777611111111000000000000023354699dcddceffd537cdeffefeeefddba977777761111111100000000000012345469adecdcdeeb348cdeefeeefffedaa87777786111111110000000000002234566aaceddcdfe9356bddefeedefffcaa77767877211111110000000000014434566abcedccdfd83448ddefefeeffc99976678777211111110000000000002445687bcdedddddd84247beefeedeeca8b876787688211111110000000000002246787bcccbcbddd93258ccefedcdeda9c867877898211111110000000000012236988bb9bddcddc83258ddeeeddcdd9ad8678988971111111100000000000133248aaca7cecbddc7226ccbddeccdddacb89876777621111111000000000002433359aca7acacddb7228b88ccabccbbcb8987678877411111110000000000024244369bb98bbcddc9326867a99bcdabcb9a8789876831111111000000000002423347adca7abcddc8336655669abc99dcb766777678211111110000000000033222247bba999bdec824655456aaa979ea557799aaa711111111000000000003322222259bb99abcb714665457aa876bd6555578abb711111111000000000012111221246ada99888615655559b9767db455556999a9211111110000000000122122112446dca877852566557bb977bf94556779a9883111111100000000001313222134448ca859853776668ab978a943333459a9a921111111000000000023224433455456546c953443323444332222356665799411111111000000000025468534444444447853211111122222222244679a7981111111220000000000025853444444444476321111111222232222455347a961111111220000000000047634444444444486321111121222222223458985693111111222000000000018644445444444448642212233222222222466569966211111222200000000001754444444444444985433457885323332345a96579511122222220000000000155444544444444499655678878776689855458a97841112222222000000000014445444555454558ba987765568887789779757aaa51122222222000000000001455555555555557fdadb965457787666769987a9821222222222000000000000245566655565655abadcdba76777777666799997312222222222000000000000013556555566678ab9aba9aab7767888777898831222222222220000000011111001137759dd889a989b87989876678888779a94122222222222000000111111111113775aec6669869a668999766689abbbbaa6122222222222000000111111111024755adb555976b965679a989bbcddbbaaa8222222222222000111111111111034655aca645967b865556789ffa9aaa99998412222222222111111111111111134557ab9545958a766655668ee988aa9899972222222222211111111111111125645deba5468499765655666787889b9889984222222222211111111111111128636efc9647839a965665556778888aa8889862222222222","3333333333222222222222222222222222111111111111111111111111111111333333333222222222222222222222222111111111111111111111111111111133333333222222222222222222222211111111111111111111111111111111113333333322222222222222222222111111111111111111111111111111111111333333222222222222222222221111111111111111111111111111111111111133333322222222222222222211111111111111111111111111111111111111113333332222222222222222111111111111111111111111111111111111111111333332222222222222222111111111111111111111111111111111111111111133332222222222222211111111111111111111111111111111111111111111113322222222222222211111111111111111111111111111111111111111111111322222222222222211111111111111111111111111111111111111111111111122222222222222221111111111111111111111111111111111111111111111102222222222222211111111111111111112344211111111111111111001110000222222222222221111111111111111115bdddb611111111111000000000000002222222222222211111111111111112afeeedeea311111111100000000000000222222222222211111111111111112bfefffeedec21111111000000000000000222222222222211111111111111118fa889ceffdd9111111000000000000000022222222222211111111111111112da444457adfec311110000000000000000022222222222111111111111111107a4543444449ef70111000000000000000002222222222211111111111111111a68cc82234326f90110000000000000000002222222222221111111111111125a5abbe9332122d80100000000000000000002222222222221111111111111069649ddda67a723d501000000000000000000022222222222111111111111111795459ca539bb83a1010000000000000000000222222222222111111111111128854334533cd965501000000000000000000002222222222211111111111111279655674228b94520000000000000000000000222222222221111111111111113878b8ba52243340000000000000000000000022222222222111111111111111178ad8ad9632225100000000000000000000002222222222221111111111111118a88a9a5452246100000000000000000000002222222222221111111111111118955ab78953482000000000000000000000002222222222222111111111111118b746b74954640000000000000000000000002222222222222211221111111138cca8423555200000000000000000000000002222222222222222222211111138aded954771000000000000000000000000002222222222222222222222121048abdedcb82011110000000000000000000000222222222222222222222221176799bba8620111111111000000000000000000222222222222222222222124ba578997332440111111111110000000000000002222222222222223222247bef8678aa63328ea511111111111000000000000002222222222223222347befeed56879a7442beeea5310011111100000000000002222222222232359ceeeeeeec2477787542bedefedb8520111100000000000002222222222326ceeeeeeeeeed21355753109feeeeddedc821110000000000000222222222232bfeeeeeeeeeed32212100018eaceeeeddde60111000000000000222222223333ceeeeeeeeeeed42444310118e96dddeeddd90111100000000000322222233327feeeeeeeedeed52443310217eeeeeddedddc211111100000000032222233333bfeeeeeeeedeed43342100215edeeedddeddd301111110000000032323233333ceeeeefeeedded33243101104ddeeedddeddd701111111100000022322233335eeeeeeeeeedded33343011104ddeeedcdedddb11111111110000022222233329feeeeeeeeedded32342011103ddeddecceeedd4011111111111002222223333ceeefeeeeeeedee32343012113ddeddedceeedd8011111111111002222223334deeefefeeeeedde31344011112cdddeedceeedda111111111111112222233333bfeefffeeeeeddd32245111122bdddeedceeeedb211111111111112222233333bfefffeeeeeeeed32245111122bdddeeedeeeddd411111111111112222223335eefffffeeeeeeee32244111122aedeeeeddeeddd511111111111112222223326fefffffeeeeeeee22344211122aedeeedcdfeded512111111111112222222328fefffffeeeeeeed223343112228edeeeedcfeeed412111111111112222222329fefffffeeeeeeeb123344212227edeeddddeeeed311111111111112222222329fefffffeeeeeeea122334202226edeeedddeeeed412111111111112222222328feffffeeeeefee8122334212236edeeecddefedd412211111111112222222317feffffeeeeefee6112234212235deeeedccefede512211111111112222223329feefffeeeeefdd4112234312235ceefedccefede61222111111111222222233dfeefffeeeefedc3112234312234beefedccefede91222211111111222222325feeffffeeeeedeb2112224312224aeefedccefedea2222221111111222222328fefffffeeefede921122233112259eefedccefeddb222222211111122222232cfefffffeeefede721122133113248eeffecceffeeb222222221111122222224eeefffffeeefede521122123113248deffeccefeedd322222221111122222223deeeffffeeefeed321122123212237ceefeccefffde512222222111122222222aeefffe7defedfb242023223212327ceefeccefeeeb3222222221111222222226feefff6eefeef7242012212212326beefedcfffeeb2222222222111222222328fefffe7eeeeee4242012212212324beeffddfffedd322222222222122222222bfeeefe7eeeefb23421123222113239deefddffeee9222222222221122222222bfeefffbeeeef823421122222113317deefedffeedc322222222221122222232afeefffeeeefe533421122222112315ceefedffeddc3222222222221222222327fefffffefefb343321122221112323aeefedeffee91322222222222222222327fefffffeeef73433211122211123217defedefeeeb2222222222222222222328fffeffffefe43333211123211123214ceefdefeede7222222222222222222328feefffffefa344432211222111232129fefdefeede7232222222222222223326feeeefffef6344222211232111233115dffeefeede6232222222222222233336fffefffefd45532233212331112331139eefefeded4222222222222222233337feeefffef946312334312331112331148ceeeeeeee5232222222222233333336feeeeffff752024233322332112331236cedffefed5232222222222233333334deeeefffd632455212332243222321215abeefddeb3322222222222223333333bfeeeeff823432232334434432222111465cefedeb2322222222222"],"k":["edddddddddddddddddeeddcbbccccccccccccdddddddddddddddddddffffdeedbccccccccccccccddddddddddddddcdfffffeeefdccccccccccccccdddddddddddddddefdcdca878ddccccccccccccccddddddddddddddfd987655435abcccccccccccccdddddddddddddefa87666543269cccccccccccccdddddddddddddee987666543348bccccccccccccdddddddddddddeea98755665336bccccccccccccdddddddddddddeeccdb88bca987accccccccccccddddddddddddddecbccedcb87bcbccccccccccccddddddddddddddeacccc9ba86888bcccccccccccdddddddddddddccaaacb69765735acccccccccccdddddddddddddbbbabc9569863469cccccccccccdddddddddddddbb999ab97774355bcccccccccccdddddddddddddbb98acdca875578cccccccccbccdddddddddddddcdbbedb98bb799cddcccccccabaddccddccccbbcdefccb986699b79dccccccccaa9cdcacdcbbcbacddfec9ba649bc4adccddcdda788ddbabcdcbcbabddffea9967bd828998888886555dcbbccbbcbbbdeedefdaaacc9323334444444553a9bdccabcdddeec8befeeed953432addeeeeefe6b9acdb9acddded877cdedb86504608fffffffff6dddddca9bccdc8d857bca8652049109ffffffff6eeeccdb9bdd86cd755788873104b2006cddddff6eeedcdedc9538d8857db9ad6003b200113679ff6eeedded85344c76a6acddcb9202b300100025bb5eeeefb533338b55c887cd957502a4022010009d5eeddc433324cccbe846ad744202a5122111001a6edbb6332327b757d835ad943001a512212100045dddb433233b5332a934bda71001b512112100004eed843322593223a735cdb70002a612112111002efe6333224531148423bda20012a722122121001efd54323223321333226c600022a722122220000eeb444323233213233225200121a722022211100eec343333223223123331011111a722022221100efc333234223332112232111212a821122322100ef9432234323431111223201122a821123332100ed6343234433331012112311222a811123333111fa4323398444442111111221222b821134565221e63422355455794221111122223b922356776641e633221223569c5132111122224a723578767642f8332111124555522311112223bec43688876641e9443111014545542421111227fff94898976541ea443211015566665641111226dde96888686421eb44322002778776665212211134433333233332fd53222103677777675332221111112222222224fd64332221257777786333322222322332232324fe65433221013578996434422222332233243333fe75433322111125897445543332234323334232ff74433332222221467545555663323443334323","ccbbbbbbbbbaaaaaaaaaaaaaaaaaaabbbbbbbbbccbbbbbbbbbbaaaaaaaaaaaaaaaaaaabbbbbbbbbccbbbbbbbbbaaaaaaaabbbaaaaaaaabbbbbbbbbbbbbbbbbbbbbaaaaaabdddeedbaaaaabbbbbbbbbbbbbbbbbbbbbbaaaabefecfffebaaaabbbbbbbbbbbbbbbbbbbbbbaaaaefd97adffdaaaaabbbbbbbbbbbbbbbbbbbbaaaabfd63346dffbaaaaabbbbbbbbbbbbbbbbbbaaaaacf9433459efbaaaabbbbbbbbbbbbbbbbbbbaaaaacd89859bacfcaaabbbbbbbbbbbbbbbbbbbbbaaaaccbcb6accbecaaabbbbbbbbbbbbbbbbbbbbbaaaaca9a746887ccbaabbbbbbbbbbbbbbbbbbbbbbaabc853556547acbabbbbbbbbbbbbbbbbbbbbbbbaabe97679a889aecabbbbbbbbbbbbbbbbbbbbbbbbabfd8899aa9bffdabbbbbbbbbbbbbbbbbbbbbbbaacffb769979dffebbbbbbbbbbbbcbbbbbbbbbbbbadfffa7679bffffcbbbbbbbbbbbbbbbbbbbbbbbbbefffdaaabcffffdbbbbbbbbbbbcbbbbbbbbbbbbbffffdbbcccffffebbbbbbbbbbbcbbbbbbbbbbbbcfffea9abbadffffcbbbbbbbbbccbbbbbbbbbbbbdefc56899997bbffdbbbbbbbbbcccbbbbbbbbb977993036777626658a9bbbbbbbbcccbbbbbbbb7202a30004445204700027bbbbbbcccccbbbbbb80004b950024320138101117bbbbccccccbbbbba400077381015510119211014abbccccccccbbbb61001750820033011084011126cbbcccccccccca20001560510010000066011113bcbcccccccccca110012402100010000570112109cbcccccccccca011120303100110000660111005cbccccccccbc7001121313100000000830111013bccccccccccc40001222231740000028112101229ccccccccbca30001762543421010066212102117cccccccccc721014543332220121393332146404bccccccccb511018643322211122972433567544bccccccccb312335754321111267843345457885bccccccccb323332664411111357643465567744bcccccccc9231000121211111389955655576315ccccccccc7111101000111000023465444773224bcccccccc5021101001111001100244467610123bdccccccc8211111111000111110577752001224cdccccccca332111110011221002974211112348dddccccccc511111111222110002410011112449dddddcccccb6321112211100000430111111345adddddcccccdc964211000000001531112223557cdddddccccccdc8777654311110263322333457cddddddddccccdb8999abb97543245332233469dddddddddddcccc86899aaaa96776621222347acddddddddddddddb5678899987234541111469bbbdddddddddddddd94567777766323345679accba9cddddddddddddd6455666554556789bbbbbbba86aedddddddddddb434555554445899999878998757ddddddd","22222222222212121111111111111222222222222222111111111111111111111111111111122222221111111111111111111111111111111111222211111111111111111111111111111111111211121111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112431111101111111111111111111111111111113abba5111001111111111111111111111111111295139d811011111111111111111111111111111760001bc50010111111111111111111111111012a500026da1010000001111111111111111111114b950775dd3000000101111111111111111111105b720242af5000000011111111111111111111107a0010009f7000000000111111111111111111108a0140019f800000000001111111111111111111ac2463019f701111100011111111111111111112be612014cf501111111111111111111111111113cfd52258fe411111111111111111111111111114dfd99857fc211111111111111111111111111115ff704645eb01111111111111111111111111113addb001348b1111111111111111111111111238bcccd900005c85211111111111111111111115cdccdddd70005dedb8311111111112211111112addccddcdd5000cdddd712221111112222111112cdcccdedddc000addddb42222221112222111222bddddcddddd9007ddddd922222211122222111228dddddeedddd604ddddec42222222222222122227dccdddeddddc00dddeee72222222222222222226ddddddeddddd91dddeeeb3222222222222222224cdddcdedddddc6dddeedd72322222222222222229ddccddedddedceeeeb6ab4333222222222222226ddddddeeeeeeeeeec617d7333222222222222223cdddddeffeeedeeeb215db3333322222222222229dddcdd8684adcddb88add8333332222222222225ddddcd92304cddddddddec433332222222222225ddddddebb76adddddeeeed533332222222222224cddddeedddc8deeeeeeefc543332222222222224ceddeeddddeeeeeeeeffe9444332222222233325deddeeeeeeefffffedca74444332222222333328eeeefffeeeefffffb5554444443333333333332addefffffffffffffc5555544433333333333333cdeefffffffffffffa5655544433333333333326deeeefffeeeeeeeefb6665544443333333333329edddeeeeedddddeeed666554444333333333333beddddddddddddeeeee766554444333333333334cdddddddddedddeeeee866554444333333333336ddddddeeddeddefeeee966655444433333333339eddddeeeddeddefeeee96665544443333333333bedddddddddeedefeeee8766554444","00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000231100000000000000000000000000000000004adedda400000000000000000000000000000006feddeffd6000000000000000000000000000004fedb879dec40000000000000000000000000001dfec75335cea0000000000000000000000000009fdea643227de700000000000000000000000003feec9763224ace40000000000000000000000008feeda887337ccda000000000000000000000000bfeedac9754bedca200000000000000000000003dfddb8966737bccb500000000000000000000012cecdc84367225bdc910000000000000000000027edcdd95379424dde80000000000000000000002dfeddca6576427ebe90000000000000000000003eeeedcb66a974aeddd3000000000000000000004ddeecdc754324deedc6000000000000000000014dddddddb9644bedee922000000000000000000219ea8eceeddddeedda501100000000000000000200ab4cceeeffeeedc63011000000000000000001107c3beeeeeeeeedc95110000000000000000000205dbeddeeeeeedcdddcb8300000000000000000029eeccdeeeeeedddcdeefe40000000000000004aeedcccdeeeeeedcdccdddec100000000000019ffeeeedcdddddeedccdccddde40000000000008feeeeeecdddddddeedbccdddde7000000000000dfeeeeeddddddddddddcccddcdeb000000000002ffeeededddddddddddddccddcdec000000000004ffeeeddddddddddddddcdcdddded200000000005feedeededddddddddddcccddddde300000000006feeeeedddddddddddddccddddddf400000000005ffeedeeedddddddddddccddddddf400000000004edeeddeeddddddddddddcddedddf500000000003d7ceddddddedddddddddcddeddef500000000002feeeddddddddddddddddddeeddef5000000000049efeedddeedddeedeededdeeddde300000000001dffeeeedddddddeeeeeeeedeedee300000000003dfeeeeededdddcdddedddeededee200000000001dfeeeeeeeeeeeeedddddddeddded100000000000dffeeedefeedeeeeeeeedddde99d100000000000bfffffedefeddeddddddddeedddc2000000000008fffffffeefedeeeeeeeeedddee72000000000005ffffffffeeedddddeeeedddeee7100000","5666777777777766665544332222111224678776666777777777776665554433222211122356777666777777777777666554443322221111224677777777777777777666555443332222111122346777777777777777766655444333222211111224567777777777777776655544433322221111122345667777777777776665544433332222111111223566777777777776665554443332222211111122345677777777776666554443333222222111112223457777777776666555444333322222211111222334777777766666555444433332222221111122223377777766666555444433333222222111111222227777766665555444443333322222211111112222777766665555444443333332222221111111112277766666555444443333332222222111111111127676666555444443333222222222211111111111766666655544444334665322222221111111111177666665544443359defea322222111111111111776666555444436dfffffe42222111111111111177666655444433bffec9bf71221111111111111077666655444434cfb868aca22211111111111000766666554443339eb87cbab52211111111111000666666554443334cdb99779622111111111100006666665544433329b98767a62211111100000000666666554443333696aaaab41211111000000000666666554443333abac888b41111111000000000766666554443337ffc998bd31111111000000000666665554443339fffebceb63111110000000000666665554443336efffffe88b831111000000000666655554444336dffddd88befd830000000000066665555444449effefeddeeeeeed61000000000666555554444bffffeeeeeeeeeeeee6010000000665555554447efeffeeeeeeeeeeeeed30110000055555555444bfffeeeeeeeeeeeeeeee81111000055555554445dffffeeeeeeeeeeeeeeec1111000055555544446effffeeeeeeeeeeeefeed3111100044444444447ffffffeeeeeeeeeeeffed5111100044444444448ffffffeeeeeeeeeeffefe7111110044444444449efffffffeeeeeeeeffedc6111111044444444449a8aeffffeeeeeefefd768711111104444444444a867efffeeeeeeffefd658921111103444444445b968ffffeeeeeeeeeee868931111103333444435b97affffeeeeeeeeeefa78a31111113333333336b99dfffffeeeeeeeeefc88a41111113333333336b99dffeeffeeeeeeeefd98a41111113333333336baaeffeeeffeeeeeeefe98a42211113333333337b9aeffeeeefeeeeeeefd99b42221113333333337b9acefefeeeeffeeeefd9aa32222113333333336c9a9dffffeeefffffebb9a922222213333333335ca99efffffddddeffc5a9b72222221","0000000000000000000000000000000000001111000000000000000000000000000000000000011100000000000000000000000000000000000000110000000000000000000000000000000000000001000000000000000000234210000000000000000100000000000000002699aa96100000000000000100000000000000028abacdcc600000000000000100000000000000078767cdded300000000000000000000000000004a31236aefe8000000000000010000000000000078012333afeb2000000000000100000000000001c71123546efc5000000000000100000000000002d833366649fe8000000000001100000000000003d855368745ddc200000000001100000000000003d7123544359be500000000011100000000000006e9114534457df800000000011100000000000008ed21453458cff900000000011100000000000016cf6257445cfffc30000000111100000000000016bec378558effff80000001111100000000000005acf91369cfffffa1000001111100000000000004acefcaabdfffefa20000111111000000000000059defffbadeefee70000111111100000000000018ceefffbbeefeec52111011111100000000000038ceeffecceeffddb8665101111100000000000249deeffedcefffeec9777411111100000000002579abeefcccdfffeedb887621111100000000013677abeef86aefffffed988841111100000000034687bbdee78beffffffca9876111110000000014569cdbdec67beffefffba8876111110000000024569cdcdfc48ceffeefeb97776111110000000023569ddddfb39defefffca8777621111000000023457addcdf847cefeeffba7778721111000000024578bddcde835befeeec997787821111000000013588bbcddd826cdfedeba9788872111100000002348ab9dcdd729ccedcdcb9877872111100000003345ab9abdc73879aacbcb98787731111000000033249ca9bdd736557ab9bc777888211110000001322238b9abb736558a87c75589b82111100000012121249c98854656aa7ac5557a993111100000012222345a8795565698687344699821111000000245534544468422222332224688951111200000015744444447521111222223466892112220000002654444444752123332222467885112222000000264454444487546786556557978412222200011014555555558c98756887887869a412222200011102456655557cbdb867777679896222222201111110134657978b9ba9a867887898212222221111111110176ad7798a6899668aaaaa412222221111111111365ab5678a65789dbbbbaa612222221111111111457ba5678866568da8a98983222222111111111274aea56689665567889a8895222222","33333322222222222222211111111111111111113333322222222222222111111111111111111111333322222222222221111111111111111111111133332222222222211111111111111111111111113332222222222111111111111111111111111111332222222221111111111111111111111111111132222222221111111111111111111111111111112222222221111111111112211111111111111110222222222111111111128cca41111110000000002222222211111111113cffffe611111000000000222222221111111111ab68bdfd301100000000002222222111111111039542359e801000000000002222222111111111177bc62208a01000000000002222222111111110585bea69467010000000000022222221111111117734737d86200000000000002222222111111111576773485300000000000000222222211111111128bab931240000000000000022222222111111112968a763530000000000000022222222111111112a768565400000000000000022222222222211213adc64730000000000000000222222222222221158adc9301110000000000000222222222222224a7798434201111100000000002222222222248bec68a733cc72100110000000002222222359cefff8378843dffda741110000000022222326eeeeeef9123311ccdeeee7011000000022222329feeeedfa243101bbceeddb11110000003222333deeeeedea243111afeddedd31111000002222335eeeeeedea2420109ededdde60111100002222329feeeeedea2420108ededdeda111111100222233bfefeeedea1431107ededdeec3111111112223329fefeeeeea1441117ededdeed411111111222233bfffeeeefa1341116edeedede611111111222224dfffeeeef91341125eeeddeee611111111222224effffeeef81342125deeddeee511111111222224efffeeeee61333124deeddeee612111111222223efffeeeee41233124ceedceee712111111222326feffeeeec31233123befdceee912211111222329feffeeeeb21223123aefdceeea2222111122223dffffeeee9112231239eeecefeb2222211122223eeeffeeee7112131238efecefec3222211122222afefadfee5312222227deecefeb2222221122222afef9defc3312221225deedefeb2222222122222cfefbeef92411221123cefdffeb2222222122222bfefeeef533112211329efdefeb22222222222329feffefc333112211316efdefea2222222222232afeffef8343112211322cfeefed42222222222329feeffe54322123112218feefed42222222222329fefffb54134223112215dfeeed32222222233329feeff932423323212224beeeec32222222233336feefe5244223343222126aeeeb22222222"]},az=window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches;
+function Nokta(c,COL,ROW){var x=c.getContext("2d"),G=null,R=[],s=COL*31+7,n=1,hedef=1,raf=0,i;
+  function rnd(){s=(s*16807)%2147483647;return s/2147483647}
+  for(i=0;i<COL*ROW;i++)R.push(rnd());
+  function ciz(){var W=c.clientWidth,H=c.clientHeight,dpr=Math.min(2,window.devicePixelRatio||1);if(!W)return;
+    if(c.width!==Math.round(W*dpr)){c.width=Math.round(W*dpr);c.height=Math.round(H*dpr)}
+    x.setTransform(dpr,0,0,dpr,0,0);x.globalCompositeOperation="source-over";x.fillStyle="#f4f4f1";x.fillRect(0,0,W,H);
+    var cw=W/COL,ch=H/ROW,r=Math.min(cw,ch)*.47,k=0;
+    for(var j=0;j<ROW;j++)for(var i=0;i<COL;i++,k++){var g=G?(typeof G==="string"?parseInt(G[k],16)/15:G[k]):.5,v=g*(1-n)+R[k]*n,cx=(i+.5)*cw,cy=(j+.5)*ch,q=r*(.42+.58*v),o=r*.3;
+      x.globalCompositeOperation="multiply";
+      x.fillStyle="rgba(170,238,120,.75)";x.beginPath();x.ellipse(cx-o,cy,q*.8,q,0,0,6.3);x.fill();
+      x.fillStyle="rgba(222,84,214,"+(.3+.6*v)+")";x.beginPath();x.ellipse(cx+o,cy,q*.8,q,0,0,6.3);x.fill();
+      if(v>.4){x.fillStyle="rgba(40,20,52,"+Math.min(.92,(v-.4)*1.7)+")";x.beginPath();x.ellipse(cx,cy,q*.86,q,0,0,6.3);x.fill()}}}
+  function adim(){n+=(hedef-n)*.1;if(Math.abs(hedef-n)<.004)n=hedef;ciz();raf=n===hedef?0:requestAnimationFrame(adim)}
+  var o={izgara:function(g){G=g},git:function(h){hedef=h;if(az){n=h;ciz()}else if(!raf)raf=requestAnimationFrame(adim)},zipla:function(h){n=h;ciz()},ciz:ciz};
+  window.addEventListener("resize",ciz);return o}
+
+/* kimlerle */
+var cm=document.getElementById("cumle"),B=[],kn=Nokta(document.getElementById("kc"),64,80);
+function sec(i,ilk){B.forEach(function(b,q){b.setAttribute("aria-pressed",q===i?"true":"false")});
+  document.getElementById("kmetin").textContent=KIM[i][2];document.getElementById("kserit").textContent=KIM[i][1];
+  document.getElementById("kliste").innerHTML=KIM[i][3].map(function(t,n){return "<li><span>0"+(n+1)+"</span><span>"+t+"</span></li>"}).join("");
+  kn.izgara(IZ.b[i]);if(!ilk)kn.zipla(.6);kn.git(.04)}
+KIM.forEach(function(k,i){var b=document.createElement("button");b.type="button";b.textContent=i===0?k[1]:k[0];b.addEventListener("click",function(){sec(i)});B.push(b);
+  cm.appendChild(b);cm.appendChild(document.createTextNode(i<KIM.length-2?", ":i===KIM.length-2?" ve ":" için kişisel marka."))});
+sec(0,true);
+
+/* paket sayaçları: her nokta ayda bir içerik */
+[].forEach.call(document.querySelectorAll(".sayac"),function(el){var s=el.getAttribute("data-s").split(","),ad=["Reels","Görsel","Story"],h="";
+  s.forEach(function(v,i){var d="";v=+v;if(v)for(var q=0;q<v;q++)d+="<b></b>";else for(var w=0;w<5;w++)d+='<b class="bos"></b>';
+    h+='<div><span lang="en">'+ad[i]+"</span><i>"+d+"</i></div>"});el.innerHTML=h});
+
+/* notlar */
+var YZ=[["Kişisel marka · 6 dk","İnsanlar şirketleri değil, yüzleri takip ediyor",4],["Sağlık · 4 dk","Doktorlar için tanıtım kuralları: neyi anlatabilirsiniz?",0],["Çekim · 3 dk","Kamera karşısında ilk 90 dakika",2],["Strateji · 5 dk","Az paylaşıp çok hatırlanmak",5]],yk=document.getElementById("yz");
+YZ.forEach(function(y){var a=document.createElement("a");a.href="yazi.html";a.innerHTML='<canvas aria-hidden="true"></canvas><span class="m">'+y[0]+"</span><h3>"+y[1]+'</h3><span class="ok" aria-hidden="true">→</span>';yk.appendChild(a);
+  var nk=Nokta(a.firstChild,40,50);nk.izgara(IZ.k[y[2]]);nk.zipla(.3);
+  a.addEventListener("pointerenter",function(){nk.git(.04)});a.addEventListener("pointerleave",function(){nk.git(.3)});a.addEventListener("focus",function(){nk.git(.04)});a.addEventListener("blur",function(){nk.git(.3)})});
+
+/* kısa bir not: yedi soru, her cevapta gürültü azalır */
+var tn=Nokta(document.getElementById("tc"),64,80),cev={},ad=0,secili=[],
+    ADIM=[{k:"ad",s:"adınız",t:"text",ac:"name"},{k:"is",s:"mesleğiniz",t:"text"},
+      {k:"ihtiyac",s:"neye ihtiyacınız var",t:"cok",o:["strateji","çekim","sosyal medya yönetimi","web sitesi","emin değilim"]},
+      {k:"durum",s:"hesaplarınız şu an",t:"tek",o:["yok","var ama düzensiz","düzenli paylaşıyorum"]},
+      {k:"zaman",s:"ne zaman başlamak istersiniz",t:"tek",o:["hemen","1–3 ay içinde","şimdilik araştırıyorum"]},
+      {k:"tel",s:"telefon",t:"tel",ac:"tel"},{k:"eposta",s:"e-posta",t:"email",ac:"email"}],
+    bas=document.getElementById("tbas"),fm=document.getElementById("tform"),gir=document.getElementById("tgir"),so=document.getElementById("tsoru"),sn=document.getElementById("tson"),sc2=document.getElementById("tsec"),dev=document.getElementById("tdev");
+tn.izgara(IZ.b[4]);tn.zipla(.78);
+function iki(n){return(n<10?"0":"")+n}
+function ileri(v){cev[ADIM[ad].k]=v;ad++;if(ad<ADIM.length){tn.git(.66-ad/ADIM.length*.6);sor()}else{fm.hidden=true;sn.hidden=false;var m="Merhaba, pbcreative tanışma görüşmesi için yazıyorum.\n\nAd: "+cev.ad+"\nMeslek: "+cev.is+"\nİhtiyaç: "+cev.ihtiyac.join(", ")+"\nHesaplar: "+cev.durum+"\nBaşlangıç: "+cev.zaman+"\nTelefon: "+cev.tel+"\nE-posta: "+cev.eposta;sn.innerHTML="";sn.appendChild(document.createTextNode("Not hazır, "+cev.ad+". "));var wa=document.createElement("a");wa.href="https://wa.me/905421952005?text="+encodeURIComponent(m);wa.target="_blank";wa.rel="noopener";wa.textContent="[WhatsApp'tan gönder] ↗";wa.style.color="inherit";sn.appendChild(wa);wa.focus({preventScroll:true});tn.git(.04)}}
+function hata(){fm.classList.remove("hata");void fm.offsetWidth;fm.classList.add("hata")}
+function sor(){var a=ADIM[ad];fm.classList.remove("hata");so.textContent=iki(ad+1)+"/"+iki(ADIM.length)+" "+a.s;secili=[];
+  if(a.o){gir.hidden=true;sc2.hidden=false;sc2.innerHTML="";dev.hidden=a.t!=="cok";
+    a.o.forEach(function(t){var b=document.createElement("button");b.type="button";b.textContent=t;b.setAttribute("aria-pressed","false");
+      b.addEventListener("click",function(){if(a.t==="tek"){ileri(t);return}var i=secili.indexOf(t);if(i<0)secili.push(t);else secili.splice(i,1);b.setAttribute("aria-pressed",i<0?"true":"false")});sc2.appendChild(b)});
+    sc2.firstChild.focus({preventScroll:true})}
+  else{gir.hidden=false;sc2.hidden=true;dev.hidden=false;gir.value="";gir.type=a.t;gir.setAttribute("autocomplete",a.ac||"off");gir.setAttribute("inputmode",a.t==="tel"?"tel":a.t==="email"?"email":"text");gir.focus({preventScroll:true})}}
+bas.addEventListener("click",function(){bas.hidden=true;fm.hidden=false;tn.git(.66);sor()});
+fm.addEventListener("submit",function(e){e.preventDefault();var a=ADIM[ad];
+  if(a.o){if(a.t==="cok"&&secili.length)ileri(secili.slice());else hata();return}
+  var v=gir.value.trim(),ok=v.length>1;if(a.t==="tel")ok=v.replace(/\D/g,"").length>=10;if(a.t==="email")ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+  if(ok)ileri(v);else{hata();gir.focus({preventScroll:true})}});
+
+/* nokta rakamlar: yazıyı küçük bir tuvale basıp noktaya çevir */
+function yaziIzgara(t,COL,ROW){var k=document.createElement("canvas");k.width=COL;k.height=ROW;var g=k.getContext("2d"),b=ROW*.82;g.font="600 "+b+"px 'Hanken Grotesk',Arial,sans-serif";var w=g.measureText(t).width;if(w>COL-4){b*=(COL-4)/w;g.font="600 "+b+"px 'Hanken Grotesk',Arial,sans-serif"}
+  g.textAlign="center";g.textBaseline="middle";g.fillStyle="#000";g.fillText(t,COL/2,ROW*.54);var d=g.getImageData(0,0,COL,ROW).data,o=[];for(var i=3;i<d.length;i+=4)o.push(d[i]/255*.95+.03);return o}
+function rakamlar(){[].forEach.call(document.querySelectorAll(".rk canvas"),function(c){var nk=Nokta(c,96,30);nk.izgara(yaziIzgara(c.getAttribute("data-yazi"),96,30));nk.zipla(1);nk.git(.03)})}
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(rakamlar);else rakamlar();
+/* paket seçici */
+var PK=[["Starter",[4,4,4],["1 sosyal hesap","Sizin görüntülerinizle üretim"],"En az 3 ay"],["Mid",[8,4,8],["Ayda 90 dk çekim","1 hesap, 1 landing page","Temel SEO/GEO, ayda 1 blog"],"En az 6 ay"],["Premium",[10,6,12],["Ayda 180 dk çekim","2 hesap, 5 sayfalık web sitesi","SEO/GEO, ayda 2 blog, SSS chatbot"],"En az 12 ay"],["Custom",null,["Klinik ve şirketler","Kapsamlı prodüksiyon, PR","Özel web geliştirme"],"Kapsama göre"]],
+    sg=document.getElementById("sg"),pn=document.getElementById("pn"),PB=[],sayRaf=0;
+function paket(i){PB.forEach(function(b,q){b.setAttribute("aria-selected",q===i?"true":"false")});var k=PK[i];
+  document.getElementById("pl").innerHTML=k[2].map(function(t){return "<li>"+t+"</li>"}).join("");document.getElementById("pe").textContent=k[3];
+  if(!k[1]){pn.innerHTML='<p class="ozel">Size göre.</p>';return}
+  if(!pn.querySelector("b"))pn.innerHTML=["Reels","Görsel","Story"].map(function(t){return '<div><b>0</b><span><span lang="en">'+t+'</span><i class="m">ayda</i></span></div>'}).join("");
+  var B=pn.querySelectorAll("b"),bas=[].map.call(B,function(b){return +b.textContent||0}),t0=null;cancelAnimationFrame(sayRaf);
+  if(az){k[1].forEach(function(v,q){B[q].textContent=v});return}
+  (function ad(t){if(t0===null)t0=t;var p=Math.min(1,(t-t0)/450),e=1-Math.pow(1-p,3);k[1].forEach(function(v,q){B[q].textContent=Math.round(bas[q]+(v-bas[q])*e)});if(p<1)sayRaf=requestAnimationFrame(ad)})(performance.now())}
+PK.forEach(function(k,i){var b=document.createElement("button");b.type="button";b.setAttribute("role","tab");b.setAttribute("lang","en");b.textContent=k[0];b.addEventListener("click",function(){paket(i)});sg.appendChild(b);PB.push(b)});
+paket(1);
+
+/* yorum portresi: koyu zeminde açık noktalar */
+function Acik(c,hex,COL,ROW,n){var x=c.getContext("2d"),s=41,R=[],i;function rnd(){s=(s*16807)%2147483647;return s/2147483647}for(i=0;i<COL*ROW;i++)R.push(rnd());
+  function ciz(){var W=c.clientWidth,H=c.clientHeight,dpr=Math.min(2,window.devicePixelRatio||1);if(!W)return;c.width=Math.round(W*dpr);c.height=Math.round(H*dpr);x.setTransform(dpr,0,0,dpr,0,0);x.clearRect(0,0,W,H);
+    var cw=W/COL,ch=H/ROW,r=Math.min(cw,ch)*.47,k=0;x.globalCompositeOperation="lighter";
+    for(var j=0;j<ROW;j++)for(var i=0;i<COL;i++,k++){var L=1-(hex?parseInt(hex[k],16)/15:.5);L=L*(1-n)+R[k]*n;if(L<.12)continue;var cx=(i+.5)*cw,cy=(j+.5)*ch,q=r*(.2+.8*L),o=r*.22;
+      x.fillStyle="rgba(120,230,120,.5)";x.beginPath();x.arc(cx-o,cy,q*.9,0,6.3);x.fill();
+      x.fillStyle="rgba(230,90,220,.5)";x.beginPath();x.arc(cx+o,cy,q*.9,0,6.3);x.fill();
+      x.fillStyle="rgba(244,242,237,"+(.25+.7*L)+")";x.beginPath();x.arc(cx,cy,q*.82,0,6.3);x.fill()}}
+  window.addEventListener("resize",ciz);ciz()}
+Acik(document.getElementById("yc"),IZ.b[0],64,80,.05);Acik(document.getElementById("yvc"),null,32,18,1);
+/* eğri: solda gürültü, sağda net ve yüksek */
+(function(){var c=document.getElementById("egri"),COL=72,ROW=34,g=[],s=5;function r(){s=(s*16807)%2147483647;return s/2147483647}
+  for(var j=0;j<ROW;j++)for(var i=0;i<COL;i++){var u=(i+.5)/COL,v=1-(j+.5)/ROW,y=Math.pow(u,2.3)*.9+.05,d=v<y?.22+.62*u:.03;if(Math.abs(v-y)<.04)d=1;g.push(d*u+r()*(1-u)*.5)}
+  var nk=Nokta(c,COL,ROW);nk.izgara(g);nk.zipla(1);nk.git(0)})();
+/* SSS: nokta soru işareti */
+function soruCiz(){var c=document.getElementById("soru"),nk=Nokta(c,30,30);nk.izgara(yaziIzgara("?",30,30));nk.zipla(1);nk.git(.05)}
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(soruCiz);else soruCiz();
+/* referans videoları: yer tutucu nokta portreler */
+[[1,"Referans 01"],[3,"Referans 02"],[5,"Referans 03"]].forEach(function(v){var a=document.createElement("a");a.className="vd";a.href="#isler";
+  a.innerHTML='<canvas aria-hidden="true"></canvas><span class="oy" aria-hidden="true">▶</span><span class="at"><span>'+v[1]+'</span><span class="m">yakında</span></span>';document.getElementById("vk").appendChild(a);
+  var nk=Nokta(a.firstChild,64,80);nk.izgara(IZ.b[v[0]]);nk.zipla(.24);
+  a.addEventListener("pointerenter",function(){nk.git(.03)});a.addEventListener("pointerleave",function(){nk.git(.24)});a.addEventListener("focus",function(){nk.git(.03)});a.addEventListener("blur",function(){nk.git(.24)})});
+})();});
+</script>
+
 </body>
 </html>
